@@ -36,6 +36,14 @@ class BuySellStockOnceTest {
         test(prices, maxProfit);
     }
 
+    @Test
+    void buySellStockOnce4() {
+        prices = Arrays.asList(2, 4, 2, 6, 3, 0, 5);
+        maxProfit = 5;
+
+        test(prices, maxProfit);
+    }
+
     private void test(List<Integer> prices, int maxProfit) {
         assertEquals(maxProfit, BuySellStockOnce.buySellStockOnce(prices));
     }
