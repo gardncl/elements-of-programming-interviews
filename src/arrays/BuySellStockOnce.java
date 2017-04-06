@@ -12,7 +12,7 @@ public class BuySellStockOnce {
 
     public static int buySellStockOnce(List<Integer> A) {
         int profit = 0;
-        
+
         return profit;
     }
 }
