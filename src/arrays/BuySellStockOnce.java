@@ -11,24 +11,11 @@ public class BuySellStockOnce {
      */
 
     public static int buySellStockOnce(List<Integer> A) {
-        int profit = 0;
-        int max = Integer.MIN_VALUE, min = Integer.MAX_VALUE;
-        for (int i = 0; i < A.size(); i++) {
-            //NEW MAX
-            if (A.get(i) > max) {
-                max = A.get(i);
-            }
-            //RESET THE INCREASING SEQUENCE
-            if (A.get(i) < min) {
-                min = A.get(i);
-                max = min;
-            }
-            //SET NEW LARGEST PROFIT
-            if ((max - min) > profit){
-                profit = max - min;
-            }
+        Integer profit = 0, min = Integer.MAX_VALUE;
+        for (Integer price : A) {
+            min = Math.min(min, price);
+            profit = Math.max(profit, price - min);
         }
-
         return profit;
     }
 }

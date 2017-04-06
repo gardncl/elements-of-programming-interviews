@@ -21,7 +21,9 @@ public class EnumeratePrimes {
         for (int i = 3; i < n; i=i+2) {
             isPrime = true;
             for( int prime : primes ) {
-                if (i%prime==0) {
+                if (prime > Math.sqrt(i)) {
+                    break;
+                } else if (i%prime==0) {
                     isPrime = false;
                     break;
                 }
