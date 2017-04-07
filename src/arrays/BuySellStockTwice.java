@@ -15,21 +15,28 @@ public class BuySellStockTwice {
         Integer a2 = 0, b2 = 0, p2 = 0;
         Integer min = Integer.MAX_VALUE, minIndex = 0;
         Integer profit = 0;
-        Integer pTotal = p1 + p2;
         Integer i = 0;
         for( Integer price : A) {
             if (price < min) {
                 min = price;
                 minIndex = i;
             }
-            profit = Math.max(profit, price - min);
-            if (profit > p2 && (profitBetweenPoints(a1, b2, A) >= profitBetweenPoints(a2, b2, A))) {
-                b1 = b2;
+            profit = price - min;
+            if(profit > p2 && a2.equals(minIndex)) {
+                b2 = i;
+            } else if (profit > p2 && !a2.equals(minIndex)) {
+                if (p1  < p2) {
+                    a1 = a2;
+                    b1 = b2;
+                }
                 a2 = minIndex;
-                b2 = minIndex;
-            } else if(profit > p2) {
-
+                b2 = i;
+            } else if (profit > p1 && !a2.equals(minIndex)) {
+                a1 = minIndex;
+                b1 = i;
             }
+
+
             p1 = profitBetweenPoints(a1, b1, A);
             p2 = profitBetweenPoints(a2, b2, A);
             i++;
