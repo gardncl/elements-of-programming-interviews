@@ -2,6 +2,10 @@ package strings;
 
 public class InteconvertStringAndInteger {
 
+    /*
+    Implement string/integer inter-conversion functions.
+     */
+
     public static Integer stringToInt(String number) {
         boolean neg = false;
         int returnValue = 0;
@@ -10,7 +14,8 @@ public class InteconvertStringAndInteger {
             neg = true;
         }
         for (int i = 0; i < number.length(); i++) {
-            returnValue = (returnValue * 10) + Character.getNumericValue(number.charAt(i));
+            final int digit = number.charAt(i) - '0';
+            returnValue = (returnValue * 10) + digit;
         }
 
         if (neg)
