@@ -14,7 +14,7 @@ public class BuySellStockTwice {
         Integer a1 = 0, b1 = 0, p1 = 0;
         Integer a2 = 0, b2 = 0, p2 = 0;
         Integer min = Integer.MAX_VALUE, minIndex = 0;
-        Integer profit = 0;
+        Integer profit;
         Integer i = 0;
         for( Integer price : A) {
             if (price < min) {
