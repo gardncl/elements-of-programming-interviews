@@ -23,7 +23,7 @@ public class ComputeMnemonicsPhoneNumber {
 
     private static void computeMnemonics(String phoneNumber, String mnemonics, List<String> numberList) {
         if (phoneNumber.equals("")) {
-            numberList.add(mnemonics.toString());
+            numberList.add(mnemonics);
         } else {
             char current = phoneNumber.charAt(0);
             phoneNumber = phoneNumber.substring(1);
