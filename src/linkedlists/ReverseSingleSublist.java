@@ -18,14 +18,12 @@ public class ReverseSingleSublist {
         trail = trail.find(s);
 
         ListNode<Integer> it = trail.next;
-        System.out.println(dummyNode.next.toString());
 
         while (s++ < f) {
-            ListNode<Integer> temp = it.next;
-            it.next = temp.next;
-            temp.next = trail.next;
-            trail.next = temp;
-            System.out.println(dummyNode.next.toString());
+            ListNode<Integer> front = it.next;
+            it.next = front.next;
+            front.next = trail.next;
+            trail.next = front;
         }
 
         return dummyNode.next;

@@ -15,9 +15,7 @@ class MergeSortedListsTest {
 
     @Test
     void mergeLists1() {
-        expected = LinkedListTestUtil.createLinkedList(new Integer[]{1,2});
-
-
+        expected = LinkedListTestUtil.createLinkedList(1, 2);
         list1 = new ListNode<>(1);
         list2 = new ListNode<>(2);
 
@@ -34,14 +32,9 @@ class MergeSortedListsTest {
 
     @Test
     void mergeLists3() {
-        expected = LinkedListTestUtil.createLinkedList(new Integer[]{1,2,3,4,5,6});
-
-        list1 = new ListNode<>(1);
-        list1.next = new ListNode<>(3);
-        list1.next.next = new ListNode<>(5);
-        list2 = new ListNode<>(2);
-        list2.next = new ListNode<>(4);
-        list2.next.next = new ListNode<>(6);
+        expected = LinkedListTestUtil.createLinkedList(1, 2, 3, 4, 5, 6);
+        list1 = LinkedListTestUtil.createLinkedList(1, 3, 5);
+        list2 = LinkedListTestUtil.createLinkedList(2, 4, 6);
 
         test(expected, list1, list2);
     }

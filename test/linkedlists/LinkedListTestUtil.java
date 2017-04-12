@@ -16,7 +16,7 @@ public class LinkedListTestUtil {
         assertNull(result);
     }
 
-    public static ListNode<Integer> createLinkedList(Integer[] integers) {
+    public static ListNode<Integer> createLinkedList(Integer... integers) {
         ListNode<Integer> dummyHead = new ListNode<>(null);
         ListNode<Integer> list = dummyHead;
         for (Integer i : integers) {

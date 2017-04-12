@@ -14,8 +14,8 @@ class ReverseSingleSublistTest {
 
     @Test
     void reverseSublist1() {
-        expected = LinkedListTestUtil.createLinkedList(new Integer[]{1, 2, 3});
-        list = LinkedListTestUtil.createLinkedList(new Integer[]{3, 2, 1});
+        expected = LinkedListTestUtil.createLinkedList(1, 2, 3);
+        list = LinkedListTestUtil.createLinkedList(3, 2, 1);
         s = 1;
         f = 3;
 
@@ -24,8 +24,8 @@ class ReverseSingleSublistTest {
 
     @Test
     void reverseSublist2() {
-        expected = LinkedListTestUtil.createLinkedList(new Integer[]{1, 2, 6, 5, 4, 3, 7, 8, 9});
-        list = LinkedListTestUtil.createLinkedList(new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9});
+        expected = LinkedListTestUtil.createLinkedList(1, 2, 6, 5, 4, 3, 7, 8, 9);
+        list = LinkedListTestUtil.createLinkedList(1, 2, 3, 4, 5, 6, 7, 8, 9);
         s = 3;
         f = 6;
 
