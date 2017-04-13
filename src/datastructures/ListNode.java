@@ -36,6 +36,10 @@ public class ListNode<T> {
         return len;
     }
 
+    public void insertAfter(ListNode<T> node) {
+        node.next = this.next;
+        this.next = node;
+    }
 
     @Override
     public String toString() {
