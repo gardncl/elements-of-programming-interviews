@@ -7,37 +7,41 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class TestCyclicityTest {
 
-    private boolean cyclic;
+    private ListNode<Integer> cycleNode;
     private ListNode<Integer> list;
 
     @Test
     void isCyclic1() {
-        cyclic = false;
         list = LinkedListTestUtil.createLinkedList(1, 2, 3, 4, 5);
+        cycleNode = null;
 
-        test(cyclic, list);
+        test(cycleNode, list);
     }
 
     @Test
     void isCyclic2() {
-        cyclic = true;
         list = LinkedListTestUtil.createLinkedList(1, 2, 3, 4, 5);
-        list.find(5).next = list.find(3);
+        cycleNode = list.find(5);
+        cycleNode.next = list.find(3);
 
-        test(cyclic, list);
+        test(cycleNode, list);
     }
 
     @Test
     void isCyclic3() {
-        cyclic = true;
         list = LinkedListTestUtil.createLinkedList(1, 2, 3, 4, 5);
-        list.find(5).next = list;
+        cycleNode = list.find(5);
+        cycleNode.next = list;
 
-        test(cyclic, list);
+        test(cycleNode, list);
     }
 
-    private void test(boolean cyclic, ListNode<Integer> list) {
-        assertEquals(cyclic, TestCyclicity.isCyclic(list));
+    private void test(ListNode<Integer> cycleNode, ListNode<Integer> list) {
+        if (cycleNode == null)
+            assertNull(TestCyclicity.isCyclic(list));
+        else
+            assertTrue(TestCyclicity.isCyclic(list).equals(cycleNode.next));
+
     }
 
 }

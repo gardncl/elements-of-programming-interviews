@@ -33,4 +33,14 @@ public class ListNode<T> {
                 ", next=" + next +
                 '}';
     }
+
+    public boolean equals(ListNode<T> node) {
+        if (node != null
+                && this.data == node.data) {
+            return this.next == node.next;
+        }
+        return false;
+    }
+
+
 }
