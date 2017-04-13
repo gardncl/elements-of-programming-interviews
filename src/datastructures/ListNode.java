@@ -14,7 +14,7 @@ public class ListNode<T> {
         this.data = data;
     }
 
-    public ListNode<T> find(int n) {
+    public ListNode<T> get(int n) {
         if (n == 1) {
             return this;
         } else if (n < 1) {
@@ -22,9 +22,20 @@ public class ListNode<T> {
         } else if (this.next == null){
             throw new RuntimeException("Index out of bounds.");
         } else {
-            return this.next.find(--n);
+            return this.next.get(--n);
         }
     }
+
+    public int length() {
+        ListNode<T> node = this;
+        int len = 1;
+        while (node.next != null) {
+            node = node.next;
+            ++len;
+        }
+        return len;
+    }
+
 
     @Override
     public String toString() {
@@ -33,14 +44,4 @@ public class ListNode<T> {
                 ", next=" + next +
                 '}';
     }
-
-    public boolean equals(ListNode<T> node) {
-        if (node != null
-                && this.data == node.data) {
-            return this.next == node.next;
-        }
-        return false;
-    }
-
-
 }

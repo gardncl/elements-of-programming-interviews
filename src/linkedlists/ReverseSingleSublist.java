@@ -15,7 +15,7 @@ public class ReverseSingleSublist {
         ListNode<Integer> dummyNode = new ListNode<>(0, input);
         ListNode<Integer> trail = dummyNode;
 
-        trail = trail.find(s);
+        trail = trail.get(s);
 
         ListNode<Integer> it = trail.next;
 

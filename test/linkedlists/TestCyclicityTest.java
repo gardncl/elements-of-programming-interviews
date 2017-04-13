@@ -21,8 +21,8 @@ class TestCyclicityTest {
     @Test
     void isCyclic2() {
         list = LinkedListTestUtil.createLinkedList(1, 2, 3, 4, 5);
-        cycleNode = list.find(5);
-        cycleNode.next = list.find(3);
+        cycleNode = list.get(5);
+        cycleNode.next = list.get(3);
 
         test(cycleNode, list);
     }
@@ -30,7 +30,7 @@ class TestCyclicityTest {
     @Test
     void isCyclic3() {
         list = LinkedListTestUtil.createLinkedList(1, 2, 3, 4, 5);
-        cycleNode = list.find(5);
+        cycleNode = list.get(5);
         cycleNode.next = list;
 
         test(cycleNode, list);
