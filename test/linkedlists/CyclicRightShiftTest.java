@@ -24,7 +24,7 @@ class CyclicRightShiftTest {
     void shift2() {
         expected = LinkedListTestUtil.createLinkedList(1, 2, 3, 4, 5);
         input = LinkedListTestUtil.createLinkedList(2, 3, 4, 5, 1);
-        k = 4;
+        k = 1;
 
         test(expected, input, k);
     }
@@ -33,7 +33,7 @@ class CyclicRightShiftTest {
     void shift3() {
         expected = LinkedListTestUtil.createLinkedList(1, 2, 3, 4, 5);
         input = LinkedListTestUtil.createLinkedList(3, 4, 5, 1, 2);
-        k = 3;
+        k = 2;
 
         test(expected, input, k);
     }

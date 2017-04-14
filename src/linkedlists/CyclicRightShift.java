@@ -24,7 +24,6 @@ public class CyclicRightShift {
             ++length;
         }
         glue.next = list;
-        System.out.println("Length: "+length+" k: "+k);
         list = cut.get(length - k).next;
         cut.get(length - k).next = null;
         return list;
