@@ -13,7 +13,13 @@ public class ListPivot {
      */
 
     public static ListNode<Integer> pivot(ListNode<Integer> list, int k) {
-        return new ListNode<Integer>(null);
+        ListNode<Integer> less = new ListNode<>(0);
+        ListNode<Integer> equal = new ListNode<>(0);
+        ListNode<Integer> greater = new ListNode<>(0);
+
+
+
+        return list;
     }
 
 }

@@ -3,10 +3,6 @@ package linkedlists;
 import datastructures.ListNode;
 import org.junit.jupiter.api.Test;
 
-import static linkedlists.LinkedListUtil.assertSameList;
-import static linkedlists.LinkedListUtil.createLinkedList;
-import static linkedlists.ListPivot.pivot;
-
 class ListPivotTest {
 
     private ListNode<Integer> expected;
@@ -15,8 +11,8 @@ class ListPivotTest {
 
     @Test
     void pivot1() {
-        expected = createLinkedList(1);
-        input = createLinkedList(1);
+        expected = LinkedListUtil.createLinkedList(1);
+        input = LinkedListUtil.createLinkedList(1);
         k = 0;
 
         test(expected, input, k);
@@ -24,8 +20,8 @@ class ListPivotTest {
 
     @Test
     void pivot2() {
-        expected = createLinkedList(3, 3, 3, 2, 2, 2, 1, 1, 1);
-        input = createLinkedList(2, 2, 3, 3, 3, 2, 1, 1, 1);
+        expected = LinkedListUtil.createLinkedList(3, 3, 3, 2, 2, 2, 1, 1, 1);
+        input = LinkedListUtil.createLinkedList(2, 2, 3, 3, 3, 2, 1, 1, 1);
         k = 4;
 
         test(expected, input, k);
@@ -33,8 +29,8 @@ class ListPivotTest {
 
     @Test
     void pivot3() {
-        expected = createLinkedList(3, 3, 3, 2, 2, 2, 1, 1, 1);
-        input = createLinkedList(1, 1, 1, 2, 2, 2, 3, 3, 3);
+        expected = LinkedListUtil.createLinkedList(3, 3, 3, 2, 2, 2, 1, 1, 1);
+        input = LinkedListUtil.createLinkedList(1, 1, 1, 2, 2, 2, 3, 3, 3);
         k = 8;
 
         test(expected, input, k);
@@ -42,15 +38,15 @@ class ListPivotTest {
 
     @Test
     void pivot4() {
-        expected = createLinkedList(3, 2, 2, 5, 7, 11, 11);
-        input = createLinkedList(3, 2, 2, 11, 7, 5, 11);
+        expected = LinkedListUtil.createLinkedList(3, 2, 2, 5, 7, 11, 11);
+        input = LinkedListUtil.createLinkedList(3, 2, 2, 11, 7, 5, 11);
         k = 7;
 
         test(expected, input, k);
     }
 
     private void test(ListNode<Integer> expected, ListNode<Integer> input, int k) {
-        assertSameList(expected, pivot(input, k));
+        LinkedListUtil.assertSameList(expected, ListPivot.pivot(input, k));
     }
 
 }
