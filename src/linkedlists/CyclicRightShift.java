@@ -10,9 +10,6 @@ public class CyclicRightShift {
     cyclically shifted to the right by k.
      */
 
-    //1 2 3 4 5
-    //3 4 5 1 2
-
     public static ListNode<Integer> shift(int k, ListNode<Integer> list) {
         ListNode<Integer> cut = list;
         ListNode<Integer> glue = list;
