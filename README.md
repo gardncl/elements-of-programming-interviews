@@ -3,9 +3,10 @@
 This repository contains solutions, tests, and descriptions of the problems from
 [Elements Of Programming Interviews] by Adnan Aziz, Tsung-Hsien Lee, and Amit Prakash.  
 
-It contains two branches:
-1. [master] - Contains stubbed methods for all problems, descriptions of them, and test cases.  
-2. [solutions] - Has everything in master in addition to my own solutions  
+It contains three branches:
+1. [master] - Stable release that only contains correct tests and completed work 
+2. [develop] - Contains all incremental updates working towards a release
+3. [solutions] - My personal branch where I solve the problems  
 
 Suggested usage:
 * Purchase [Elements of Programming Interviews]
@@ -24,4 +25,5 @@ This project is open source so please fork it and help me create a supplement to
 
 [Elements of Programming Interviews]:https://www.amazon.com/Elements-Programming-Interviews-Java-Insiders/dp/1517435803/
 [master]:https://github.com/gardncl/elements-of-programming-interviews
+[develop]:https://github.com/gardncl/elements-of-programming-interviews/tree/develop
 [solutions]:https://github.com/gardncl/elements-of-programming-interviews/tree/solutions
