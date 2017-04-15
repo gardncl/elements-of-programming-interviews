@@ -24,15 +24,6 @@ class AddIntegersTest {
 
     @Test
     void addIntegers2() {
-        sum = createLinkedList(1);
-        a = createLinkedList(1, 0, 0, 0, 0);
-        b = createLinkedList(0, 0, 0);
-
-        test(sum, a, b);
-    }
-
-    @Test
-    void addIntegers3() {
         sum = createLinkedList(4, 2, 0, 1);
         a = createLinkedList(2, 1, 5);
         b = createLinkedList(2, 1, 5);
@@ -41,7 +32,7 @@ class AddIntegersTest {
     }
 
     @Test
-    void addIntegers4() {
+    void addIntegers3() {
         sum = createLinkedList(1, 0, 0, 1);
         a = createLinkedList(1, 0, 0, 0);
         b = createLinkedList(0, 0, 0, 1);
