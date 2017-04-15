@@ -13,7 +13,7 @@ public class ListPivot {
      */
 
     public static ListNode<Integer> pivot(ListNode<Integer> list, int k) {
-        return new ListNode<Integer>(null);
+        return new ListNode<>(null);
     }
 
 }
