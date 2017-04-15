@@ -3,7 +3,9 @@ package linkedlists;
 import datastructures.ListNode;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static linkedlists.EvenOddMerge.merge;
+import static linkedlists.LinkedListUtil.assertSameList;
+import static linkedlists.LinkedListUtil.createLinkedList;
 
 class EvenOddMergeTest {
 
@@ -12,38 +14,38 @@ class EvenOddMergeTest {
 
     @Test
     void merge1() {
-        expected = LinkedListTestUtil.createLinkedList(0, 1);
-        input = LinkedListTestUtil.createLinkedList(0, 1);
+        expected = createLinkedList(0, 1);
+        input = createLinkedList(0, 1);
 
         test(expected, input);
     }
 
     @Test
     void merge2() {
-        expected = LinkedListTestUtil.createLinkedList(0, 2, 1);
-        input = LinkedListTestUtil.createLinkedList(0, 1, 2);
+        expected = createLinkedList(0, 2, 1);
+        input = createLinkedList(0, 1, 2);
 
         test(expected, input);
     }
 
     @Test
     void merge3() {
-        expected = LinkedListTestUtil.createLinkedList(0, 2, 4, 1, 3);
-        input = LinkedListTestUtil.createLinkedList(0, 1, 2, 3, 4);
+        expected = createLinkedList(0, 2, 4, 1, 3);
+        input = createLinkedList(0, 1, 2, 3, 4);
 
         test(expected, input);
     }
 
     @Test
     void merge4() {
-        expected = LinkedListTestUtil.createLinkedList(0, 2, 4, 6, 1, 3, 5, 7);
-        input = LinkedListTestUtil.createLinkedList(0, 1, 2, 3, 4, 5, 6, 7);
+        expected = createLinkedList(0, 2, 4, 6, 1, 3, 5, 7);
+        input = createLinkedList(0, 1, 2, 3, 4, 5, 6, 7);
 
         test(expected, input);
     }
 
     private void test(ListNode<Integer> expected, ListNode<Integer> input) {
-        LinkedListTestUtil.assertSameList(expected, EvenOddMerge.merge(input));
+        assertSameList(expected, merge(input));
     }
 
 

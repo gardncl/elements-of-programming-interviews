@@ -3,7 +3,9 @@ package linkedlists;
 import datastructures.ListNode;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static linkedlists.CyclicRightShift.shift;
+import static linkedlists.LinkedListUtil.assertSameList;
+import static linkedlists.LinkedListUtil.createLinkedList;
 
 class CyclicRightShiftTest {
 
@@ -13,8 +15,8 @@ class CyclicRightShiftTest {
 
     @Test
     void shift1() {
-        expected = LinkedListTestUtil.createLinkedList(1, 2, 3, 4, 5);
-        input = LinkedListTestUtil.createLinkedList(1, 2, 3, 4, 5);
+        expected = createLinkedList(1, 2, 3, 4, 5);
+        input = createLinkedList(1, 2, 3, 4, 5);
         k = 0;
 
         test(expected, input, k);
@@ -22,8 +24,8 @@ class CyclicRightShiftTest {
 
     @Test
     void shift2() {
-        expected = LinkedListTestUtil.createLinkedList(1, 2, 3, 4, 5);
-        input = LinkedListTestUtil.createLinkedList(2, 3, 4, 5, 1);
+        expected = createLinkedList(1, 2, 3, 4, 5);
+        input = createLinkedList(2, 3, 4, 5, 1);
         k = 1;
 
         test(expected, input, k);
@@ -31,8 +33,8 @@ class CyclicRightShiftTest {
 
     @Test
     void shift3() {
-        expected = LinkedListTestUtil.createLinkedList(1, 2, 3, 4, 5);
-        input = LinkedListTestUtil.createLinkedList(3, 4, 5, 1, 2);
+        expected = createLinkedList(1, 2, 3, 4, 5);
+        input = createLinkedList(3, 4, 5, 1, 2);
         k = 2;
 
         test(expected, input, k);
@@ -40,15 +42,15 @@ class CyclicRightShiftTest {
 
     @Test
     void shift4() {
-        expected = LinkedListTestUtil.createLinkedList(1, 2);
-        input = LinkedListTestUtil.createLinkedList(2, 1);
+        expected = createLinkedList(1, 2);
+        input = createLinkedList(2, 1);
         k = 1;
 
         test(expected, input, k);
     }
 
     private void test(ListNode<Integer> expected, ListNode<Integer> input, int k) {
-        LinkedListTestUtil.assertSameList(expected, CyclicRightShift.shift(k, input));
+        assertSameList(expected, shift(k, input));
     }
 
 }

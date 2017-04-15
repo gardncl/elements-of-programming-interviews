@@ -3,7 +3,9 @@ package linkedlists;
 import datastructures.ListNode;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static linkedlists.DeleteKthLastNode.deleteNode;
+import static linkedlists.LinkedListUtil.assertSameList;
+import static linkedlists.LinkedListUtil.createLinkedList;
 
 class DeleteKthLastNodeTest {
 
@@ -13,8 +15,8 @@ class DeleteKthLastNodeTest {
 
     @Test
     void deleteNode1() {
-        expected = LinkedListTestUtil.createLinkedList(1, 2, 3, 4, 5);
-        input = LinkedListTestUtil.createLinkedList(1, 2, 3, 4, 5);
+        expected = createLinkedList(1, 2, 3, 4, 5);
+        input = createLinkedList(1, 2, 3, 4, 5);
         k = 1;
 
         test(expected, input, k);
@@ -22,8 +24,8 @@ class DeleteKthLastNodeTest {
 
     @Test
     void deleteNode2() {
-        expected = LinkedListTestUtil.createLinkedList(1, 2, 3, 4, 5);
-        input = LinkedListTestUtil.createLinkedList(1, 2, 3, 4, 5);
+        expected = createLinkedList(1, 2, 3, 4, 5);
+        input = createLinkedList(1, 2, 3, 4, 5);
         k = 3;
 
         test(expected, input, k);
@@ -31,8 +33,8 @@ class DeleteKthLastNodeTest {
 
     @Test
     void deleteNode3() {
-        expected = LinkedListTestUtil.createLinkedList(1, 2, 3, 4, 5);
-        input = LinkedListTestUtil.createLinkedList(1, 2, 3, 4, 5);
+        expected = createLinkedList(1, 2, 3, 4, 5);
+        input = createLinkedList(1, 2, 3, 4, 5);
         k = 5;
 
         test(expected, input, k);
@@ -40,8 +42,8 @@ class DeleteKthLastNodeTest {
 
     private void test(ListNode<Integer> expected, ListNode<Integer> input, int k) {
         input.get(input.length() - k + 1).insertAfter(new ListNode<>(10));
-        DeleteKthLastNode.deleteNode(input, k);
-        LinkedListTestUtil.assertSameList(expected, input);
+        deleteNode(input, k);
+        assertSameList(expected, input);
     }
 
 

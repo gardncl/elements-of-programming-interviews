@@ -3,7 +3,9 @@ package linkedlists;
 import datastructures.ListNode;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static linkedlists.LinkedListUtil.assertSameList;
+import static linkedlists.LinkedListUtil.createLinkedList;
+import static linkedlists.ReverseSingleSublist.reverseSublist;
 
 class ReverseSingleSublistTest {
 
@@ -14,8 +16,8 @@ class ReverseSingleSublistTest {
 
     @Test
     void reverseSublist1() {
-        expected = LinkedListTestUtil.createLinkedList(1, 2, 3);
-        list = LinkedListTestUtil.createLinkedList(3, 2, 1);
+        expected = createLinkedList(1, 2, 3);
+        list = createLinkedList(3, 2, 1);
         s = 1;
         f = 3;
 
@@ -24,8 +26,8 @@ class ReverseSingleSublistTest {
 
     @Test
     void reverseSublist2() {
-        expected = LinkedListTestUtil.createLinkedList(1, 2, 6, 5, 4, 3, 7, 8, 9);
-        list = LinkedListTestUtil.createLinkedList(1, 2, 3, 4, 5, 6, 7, 8, 9);
+        expected = createLinkedList(1, 2, 6, 5, 4, 3, 7, 8, 9);
+        list = createLinkedList(1, 2, 3, 4, 5, 6, 7, 8, 9);
         s = 3;
         f = 6;
 
@@ -33,7 +35,7 @@ class ReverseSingleSublistTest {
     }
 
     private void test(ListNode<Integer> expected, ListNode<Integer> list, int s, int f) {
-        LinkedListTestUtil.assertSameList(expected, ReverseSingleSublist.reverseSublist(list, s, f));
+        assertSameList(expected, reverseSublist(list, s, f));
     }
 
 }
