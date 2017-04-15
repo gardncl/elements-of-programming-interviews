@@ -11,33 +11,28 @@ public class AddIntegers {
      */
     
     public static ListNode<Integer> addIntegers(ListNode<Integer> a, ListNode<Integer> b) {
-        ListNode<Integer> sum = new ListNode<Integer>(null);
+        ListNode<Integer> sum = new ListNode<>(null);
         ListNode<Integer> sumIter = sum;
-        ListNode<Integer> aIter = new ListNode<>(null, a);
-        ListNode<Integer> bIter = new ListNode<>(null, b);
-        ListNode<Integer> end = new ListNode<Integer>(null);
+        ListNode<Integer> end = new ListNode<>(null);
         int prev = 0;
-        while (aIter.next != null || bIter.next != null) {
-            int curr = 0;
-            if (aIter.next != null) {
-                curr += aIter.next.data;
-                aIter = aIter.next;
+        while (a != null || b != null || prev > 0) {
+            int curr = prev;
+            if (a != null) {
+                curr += a.data;
+                a = a.next;
             }
-            if (bIter.next != null) {
-                curr += bIter.next.data;
-                bIter = bIter.next;
+            if (b != null) {
+                curr += b.data;
+                b = b.next;
             }
-            curr += prev;
 
             sumIter.next = new ListNode<>(curr % 10);
-            if (curr == 0) {
-                end = sumIter;
-            }
+
             sumIter = sumIter.next;
             prev = curr / 10;
         }
 
-        end.next = null;
+
         return sum.next;
     }
 }
