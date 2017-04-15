@@ -8,10 +8,17 @@ It contains two branches:
 2. [no-solutions] - Has only stubbed out methods for the test, but contains all test cases. This is the branch I suggest pulling.  
 
 Suggested usage:  
-Purchase [Elements of Programming Interviews], clone [no-solutions], and then work through the solutions yourself 
-using only the test cases. If you need help reference the book for the hints they provide (intentionally omitted 
-by me inside this repository) and their solutions. My (sometimes commented) solutions are also available on the 
-main branch if you become desperate for more resources to help you understand!
+* Purchase [Elements of Programming Interviews]
+* Clone [no-solutions]
+* Solve the problems on a blackboard/whiteboard/paper/google document
+* Program your solution to see if the test cases pass
+
+Having trouble solving a problem?
+* The book contains hints that I intentionally omitted from this repository
+* The book contains thorough solutions
+* My (sometimes commented) solutions are available in the [master] branch
+
+This project is open source so please fork it and help me create a supplement to this phenomenal book. Always looking for edge cases.
 
 
 [Elements of Programming Interviews]:https://www.amazon.com/Elements-Programming-Interviews-Java-Insiders/dp/1517435803/
