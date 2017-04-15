@@ -24,9 +24,9 @@ class ListPivotTest {
 
     @Test
     void pivot2() {
-        expected = createLinkedList(3, 3, 3, 2, 2, 2, 1, 1, 1);
-        input = createLinkedList(2, 2, 3, 3, 3, 2, 1, 1, 1);
-        k = 4;
+        expected = createLinkedList(1, 1, 1, 3, 3, 3, 2, 2, 2);
+        input = createLinkedList(3, 3, 3, 2, 2, 2, 1, 1, 1);
+        k = 1;
 
         test(expected, input, k);
     }
@@ -35,7 +35,7 @@ class ListPivotTest {
     void pivot3() {
         expected = createLinkedList(3, 3, 3, 2, 2, 2, 1, 1, 1);
         input = createLinkedList(1, 1, 1, 2, 2, 2, 3, 3, 3);
-        k = 8;
+        k = 2;
 
         test(expected, input, k);
     }
