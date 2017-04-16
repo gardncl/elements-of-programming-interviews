@@ -24,19 +24,12 @@ public class FindOverlappingWithCycles {
         //NO CYCLES IN EITHER
         if (iter1.next == null && iter2.next == null) {
             return null;
-        //LIST 2 HAS A CYCLE
-        } else if (iter1.next == null) {
-
-        //LIST 1 HAS A CYCLE
-        } else if (iter2.next == null) {
-
-        //BOTH HAVE CYCLES
         } else {
 
         }
 
 
-        return null;
+        return new ListNode<>(0);
     }
 
     private static ListNode<Integer> getCycle(ListNode<Integer> list) {
