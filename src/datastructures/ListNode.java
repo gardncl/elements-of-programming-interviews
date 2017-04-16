@@ -43,6 +43,16 @@ public class ListNode<T> {
 
     @Override
     public String toString() {
+        return "ListNode{" +
+                "data=" + data +
+                ", next=" + next.data +
+                '}';
+    }
+
+
+    /*
+    @Override
+    public String toString() {
         StringBuilder list = new StringBuilder();
         list.append(this.data.toString()+" -> ");
         while (this.next != null) {
@@ -52,4 +62,5 @@ public class ListNode<T> {
         list.append("null");
         return list.toString();
     }
+    */
 }

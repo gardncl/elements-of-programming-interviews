@@ -31,15 +31,17 @@ public class FindOverlappingWithCycles {
             //TWO CYCLES
             ListNode<Integer> bookmark = iter1;
 
+
             while (iter1.next != bookmark) {
                 if (iter1.next == iter2.next) {
                     return iter1.next;
                 }
+                iter1 = iter1.next;
             }
         }
 
 
-        return new ListNode<>(0);
+        return null;
     }
 
     private static ListNode<Integer> getCycle(ListNode<Integer> list) {
