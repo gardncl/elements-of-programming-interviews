@@ -17,20 +17,18 @@ public class BaseConversion {
         char[] c = s.toCharArray();
         boolean neg = c[0] == '-';
         int total = 0;
-        for (int i  = neg ? 1 : 0; i < c.length; i++) {
+        for (int i = neg ? 1 : 0; i < c.length; i++) {
             total *= b1;
-            total += Character.isDigit(c[i]) ? Character.getNumericValue(c[i])
-                            : 10 + (c[i] - 'A');
+            total += Character.isDigit(c[i])
+                    ?c[i] - '0' : c[i] - 'A' + 10 ;
         }
-
-        return (neg ? "-" : "") + (total == 0 ? "0" : constructFromBase(total, b2));
+        return (neg ? "-" :  "") + baseConvert(total, b2);
     }
 
-    private static String constructFromBase(int num, int base) {
-        int curr = num % base;
-        return num == 0 ? "" : constructFromBase(num / base, base) +
-                (char)(curr > 9 ? 'A' + curr - 10 : '0' + curr);
-
+    private static String baseConvert(int total, int base) {
+        int curr = total % base;
+        return total == 0 ? "" : baseConvert(total / base, base) +
+                (char)(curr > 9 ? 'A' + curr - 10 : curr + '0' );
     }
 
 
