@@ -12,26 +12,23 @@ public class AddIntegers {
     
     public static ListNode<Integer> addIntegers(ListNode<Integer> a, ListNode<Integer> b) {
         ListNode<Integer> sum = new ListNode<>(null);
-        ListNode<Integer> sumIter = sum;
-        ListNode<Integer> end = new ListNode<>(null);
-        int prev = 0;
-        while (a != null || b != null || prev > 0) {
-            int curr = prev;
+        ListNode<Integer> iter = sum;
+        int carry = 0;
+        while (a != null || b !=null || carry > 0) {
+            int current = carry;
             if (a != null) {
-                curr += a.data;
+                current += a.data;
                 a = a.next;
             }
             if (b != null) {
-                curr += b.data;
+                current += b.data;
                 b = b.next;
             }
+            iter.next = new ListNode<>(current % 10);
+            iter = iter.next;
 
-            sumIter.next = new ListNode<>(curr % 10);
-
-            sumIter = sumIter.next;
-            prev = curr / 10;
+            carry = current / 10;
         }
-
 
         return sum.next;
     }

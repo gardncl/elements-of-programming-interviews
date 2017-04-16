@@ -3,10 +3,7 @@ package linkedlists;
 import datastructures.ListNode;
 import org.junit.jupiter.api.Test;
 
-import static linkedlists.LinkedListUtil.createLinkedList;
-import static linkedlists.TestCyclicity.isCyclic;
-import static org.junit.jupiter.api.Assertions.assertNull;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 class TestCyclicityTest {
 
@@ -15,7 +12,7 @@ class TestCyclicityTest {
 
     @Test
     void isCyclic1() {
-        list = createLinkedList(1, 2, 3, 4, 5);
+        list = LinkedListUtil.createLinkedList(1, 2, 3, 4, 5);
         cycleNode = null;
 
         test(cycleNode, list);
@@ -23,7 +20,7 @@ class TestCyclicityTest {
 
     @Test
     void isCyclic2() {
-        list = createLinkedList(1, 2, 3, 4, 5);
+        list = LinkedListUtil.createLinkedList(1, 2, 3, 4, 5);
         cycleNode = list.get(5);
         cycleNode.next = list.get(3);
 
@@ -32,7 +29,7 @@ class TestCyclicityTest {
 
     @Test
     void isCyclic3() {
-        list = createLinkedList(1, 2, 3, 4, 5);
+        list = LinkedListUtil.createLinkedList(1, 2, 3, 4, 5);
         cycleNode = list.get(5);
         cycleNode.next = list;
 
@@ -41,9 +38,9 @@ class TestCyclicityTest {
 
     private void test(ListNode<Integer> cycleNode, ListNode<Integer> list) {
         if (cycleNode == null)
-            assertNull(isCyclic(list));
+            assertNull(TestCyclicity.isCyclic(list));
         else
-            assertTrue(isCyclic(list).equals(cycleNode.next));
+            assertTrue(TestCyclicity.isCyclic(list).equals(cycleNode.next));
 
     }
 
