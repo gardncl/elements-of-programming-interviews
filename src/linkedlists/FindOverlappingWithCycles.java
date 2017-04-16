@@ -2,6 +2,8 @@ package linkedlists;
 
 import datastructures.ListNode;
 
+import static linkedlists.TestForOverlappingLists.doListsOverlap;
+
 public class FindOverlappingWithCycles {
 
     /*
@@ -23,9 +25,16 @@ public class FindOverlappingWithCycles {
 
         //NO CYCLES IN EITHER
         if (iter1.next == null && iter2.next == null) {
-            return null;
+            return doListsOverlap(list1, list2);
         } else {
+            //AT LEAST ONE CYCLE
+            ListNode<Integer> bookmark = iter1;
 
+            while (iter1.next != bookmark) {
+                if (iter1.next == iter2.next) {
+                    return iter1.next;
+                }
+            }
         }
 
 

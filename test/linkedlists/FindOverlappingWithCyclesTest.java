@@ -81,9 +81,14 @@ class FindOverlappingWithCyclesTest {
 
     private void test(ListNode<Integer> overlap, ListNode<Integer> list1, ListNode<Integer> list2) {
         ListNode<Integer> result = testOverlappingWithCycles(list1, list2);
-        assertEquals(overlap.data, result.data);
-        if (overlap.next != null)
+        if (overlap == null)
+            assertNull(result);
+        else if (overlap.next != null) {
+            assertNotNull(result);
+            assertEquals(overlap.data, result.data);
             assertEquals(overlap.next.data, result.next.data);
+        }
+
     }
 
 }
