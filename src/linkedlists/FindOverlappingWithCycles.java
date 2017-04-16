@@ -27,21 +27,36 @@ public class FindOverlappingWithCycles {
         } else if (iter1.next == null || iter2.next == null){
             //ONLY ONCE CYCLE SO THEY CANNOT POSSIBLY OVERLAP
             return null;
+        }
+
+        //DO THEY OVERLAP
+        ListNode<Integer> temp = iter2;
+
+        do {
+            temp = temp.next;
+        } while (temp != iter1 && temp != iter2);
+
+        if (temp != iter1)
+            return null;
+
+        //FIND NODE
+        int length1 = distance(list1, iter1), length2 = distance(list2,iter2);
+        int count = Math.abs(length1 - length2);
+        if (length1 > length2) {
+            while (length1-- > 0) {
+                list1 = list1.next;
+            }
         } else {
-            //TWO CYCLES
-            ListNode<Integer> bookmark = iter1;
-
-
-            while (iter1.next != bookmark) {
-                if (iter1.next == iter2.next) {
-                    return iter1.next;
-                }
-                iter1 = iter1.next;
+            while (length2-- > 0) {
+                list2 = list2.next;
             }
         }
 
-
-        return null;
+        while (list1 != list2 && list1 != iter1 && list2 != iter2) {
+            list1 = list1.next;
+            list2 = list2.next;
+        }
+        return iter2.next;
     }
 
     private static ListNode<Integer> getCycle(ListNode<Integer> list) {
@@ -73,5 +88,14 @@ public class FindOverlappingWithCycles {
 
         //IF NO CYCLE THEN RETURN THE LENGTH OF THE LIST WITH NULL POINTER TO NEXT NODE
         return new ListNode<>(length, null);
+    }
+
+    private static int distance(ListNode<Integer> a, ListNode<Integer> b) {
+        int dis = 0;
+        while (a != b) {
+            a = a.next;
+            ++dis;
+        }
+        return dis;
     }
 }
