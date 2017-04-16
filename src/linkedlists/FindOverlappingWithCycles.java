@@ -20,14 +20,15 @@ public class FindOverlappingWithCycles {
     public static ListNode<Integer> testOverlappingWithCycles(ListNode<Integer> list1, ListNode<Integer> list2) {
         ListNode<Integer> iter1 = getCycle(list1);
         ListNode<Integer> iter2 = getCycle(list2);
-        int length1 = iter1.data;
-        int length2 = iter2.data;
 
         //NO CYCLES IN EITHER
         if (iter1.next == null && iter2.next == null) {
             return doListsOverlap(list1, list2);
+        } else if (iter1.next == null || iter2.next == null){
+            //ONLY ONCE CYCLE SO THEY CANNOT POSSIBLY OVERLAP
+            return null;
         } else {
-            //AT LEAST ONE CYCLE
+            //TWO CYCLES
             ListNode<Integer> bookmark = iter1;
 
             while (iter1.next != bookmark) {
@@ -66,7 +67,6 @@ public class FindOverlappingWithCycles {
                 }
                 return start;
             }
-            length++;
         }
 
         //IF NO CYCLE THEN RETURN THE LENGTH OF THE LIST WITH NULL POINTER TO NEXT NODE
