@@ -67,6 +67,18 @@ class FindOverlappingWithCyclesTest {
         test(overlap, list1, list2);
     }
 
+    @Test
+    void testOverlappingWithCycles6() {
+        list1 = createLinkedList(1, 2, 3, 4, 5);
+        list1.get(5).next = list1.get(1);
+        list2 = createLinkedList(1, 2, 3, 4, 5);
+        list2.get(5).next = list2.get(1);
+        overlap = null;
+
+
+        test(overlap, list1, list2);
+    }
+
     private void test(ListNode<Integer> overlap, ListNode<Integer> list1, ListNode<Integer> list2) {
         ListNode<Integer> result = testOverlappingWithCycles(list1, list2);
         assertEquals(overlap.data, result.data);
