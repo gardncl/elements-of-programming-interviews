@@ -24,8 +24,8 @@ class BaseConversionTest {
 
     @Test
     void baseConversion2() {
-        expected = "2C996B726";
-        input = "114152520463";
+        expected = "-6CC2";
+        input = "-62543";
         b1 = 7;
         b2 = 13;
 
