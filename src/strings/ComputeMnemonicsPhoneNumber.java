@@ -5,6 +5,8 @@ import java.util.*;
 public class ComputeMnemonicsPhoneNumber {
 
     /*
+    7.7
+
     Write a program which takes as input a phone number,
     specified as a string of digits, and returns all possible
     character sequences that correspond to the phone number.
