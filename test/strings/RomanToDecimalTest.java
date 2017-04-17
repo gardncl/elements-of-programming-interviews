@@ -12,8 +12,8 @@ class RomanToDecimalTest {
 
     @Test
     void romanToDecimal1() {
-        expected = 0;
-        roman = "";
+        expected = 1;
+        roman = "I";
 
         test(expected, roman);
     }
