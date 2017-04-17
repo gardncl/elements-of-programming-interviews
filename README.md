@@ -23,7 +23,8 @@ Having trouble solving a problem?
 This project is open source so please fork it and help me create a supplement to this phenomenal book. Always looking for edge cases.
 
 
-[Elements of Programming Interviews]:https://www.amazon.com/Elements-Programming-Interviews-Java-Insiders/dp/1517435803/
+[Elements of Programming Interviews]:https://www.amazon.com/gp/product/1517435803/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1517435803&linkCode=as2&tag=gardncl-20&linkId=5b86b3fc38b795950f0d69e7452ed763
 [master]:https://github.com/gardncl/elements-of-programming-interviews
 [develop]:https://github.com/gardncl/elements-of-programming-interviews/tree/develop
 [solutions]:https://github.com/gardncl/elements-of-programming-interviews/tree/solutions
+
