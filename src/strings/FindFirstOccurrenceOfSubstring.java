@@ -9,8 +9,14 @@ public class FindFirstOccurrenceOfSubstring {
      */
 
     public static int findFirst(String string, String substring) {
-
-        return 0;
+        int lastIndex = substring.length() - 1;
+        for (int i = lastIndex; i < string.length(); i++) {
+            if (string.charAt(i) == substring.charAt(lastIndex)) {
+                if (substring.equals(string.substring(i - lastIndex,i+1)))
+                    return i - lastIndex;
+            }
+        }
+        return -1;
     }
 
 }
