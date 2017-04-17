@@ -22,15 +22,6 @@ class ReplaceAndRemoveTest {
 
     @Test
     void replaceAndRemove2() {
-        expected = " ";
-        input = "b";
-        k=1;
-
-        test(expected, input, k);
-    }
-
-    @Test
-    void replaceAndRemove3() {
         expected = "dd";
         input = "ab";
         k=2;
@@ -39,7 +30,7 @@ class ReplaceAndRemoveTest {
     }
 
     @Test
-    void replaceAndRemove4() {
+    void replaceAndRemove3() {
         expected = "ddddc";
         input = "abac ";
         k=4;
@@ -48,7 +39,7 @@ class ReplaceAndRemoveTest {
     }
 
     @Test
-    void replaceAndRemove5() {
+    void replaceAndRemove4() {
         expected = "ddcdcdd";
         input = "acdbbca";
         k=7;
