@@ -37,7 +37,7 @@ class ReverseWordsInASentenceTest {
     @Test
     void reverseWordsInASentence4() {
         expected = "Alice doesn't like Bob";
-        input = "Bob doesn't like Alice";
+        input = "Bob like doesn't Alice";
 
         test(expected, input);
     }
