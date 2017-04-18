@@ -5,6 +5,8 @@ import java.util.List;
 public class DeleteDuplicates {
 
     /*
+    6.5
+
     Write a program that takes as input an array a sorted array and updates
     it so that all duplicates have been removed and the remaining elements
     have been shifted left to fill the emptied indices. Return the
