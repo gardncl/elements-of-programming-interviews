@@ -3,6 +3,8 @@
 This repository contains solutions, tests, and descriptions of the problems from
 [Elements Of Programming Interviews] by Adnan Aziz, Tsung-Hsien Lee, and Amit Prakash.  
 
+[![alt text][eopi]][Elements of Programming Interviews]
+
 It contains three branches:
 1. [master] - Stable release that only contains correct tests and completed work 
 2. [develop] - Contains all incremental updates working towards a release
@@ -21,8 +23,6 @@ Having trouble solving a problem?
 * My (sometimes commented) solutions are available in the [solutions] branch
 
 This project is open source so please fork it and help me create a supplement to this phenomenal book. Always looking for edge cases.
-
-[![alt text][eopi]][Elements of Programming Interviews]
 
 [Elements of Programming Interviews]:https://www.amazon.com/gp/product/1517435803/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1517435803&linkCode=as2&tag=gardncl-20&linkId=5b86b3fc38b795950f0d69e7452ed763
 [master]:https://github.com/gardncl/elements-of-programming-interviews
