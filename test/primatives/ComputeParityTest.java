@@ -29,7 +29,7 @@ class ComputeParityTest {
 
     @Test
     void parity3() {
-        expected = 0;
+        expected = 1;
         n = 2;
 
         test(expected, n);
