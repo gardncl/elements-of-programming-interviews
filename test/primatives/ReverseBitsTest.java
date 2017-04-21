@@ -2,10 +2,6 @@ package primatives;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-
 import static org.junit.jupiter.api.Assertions.*;
 import static primatives.ReverseBits.reverse;
 
@@ -23,9 +19,6 @@ class ReverseBitsTest {
     }
 
     private void test(long expected, long input) {
-        int[] a;
-        HashMap<Integer, Integer> map = new HashMap<>();
-        
         assertEquals(expected, reverse(input));
     }
 
