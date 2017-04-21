@@ -21,7 +21,7 @@ class CheckIfIntegerIsPalindromeTest {
     @Test
     void isPalindrome2() {
         expected = true;
-        input = 121;
+        input = 0;
 
         test(expected, input);
     }
@@ -29,15 +29,7 @@ class CheckIfIntegerIsPalindromeTest {
     @Test
     void isPalindrome3() {
         expected = true;
-        input = 8352538;
-
-        test(expected, input);
-    }
-
-    @Test
-    void isPalindrome4() {
-        expected = true;
-        input = 835538;
+        input = -1;
 
         test(expected, input);
     }
