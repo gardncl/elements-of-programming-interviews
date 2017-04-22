@@ -7,8 +7,8 @@ import static primatives.ReverseBits.reverse;
 
 class ReverseBitsTest {
 
-    private long expected;
-    private long input;
+    private int expected;
+    private int input;
 
     @Test
     void reverse1() {
@@ -18,7 +18,7 @@ class ReverseBitsTest {
         test(expected, input);
     }
 
-    private void test(long expected, long input) {
+    private void test(int expected, int input) {
         assertEquals(expected, reverse(input));
     }
 
