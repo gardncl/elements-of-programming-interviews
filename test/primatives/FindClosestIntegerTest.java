@@ -20,7 +20,7 @@ class FindClosestIntegerTest {
 
     @Test
     void closestIntSameBitCount2() {
-        expected = -209;
+        expected = -211;
         x = -210;
 
         test(expected, x);
@@ -36,7 +36,7 @@ class FindClosestIntegerTest {
 
     @Test
     void closestIntSameBitCount4() {
-        expected = -23;
+        expected = -14;
         x = -15;
 
         test(expected, x);
