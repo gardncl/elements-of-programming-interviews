@@ -19,7 +19,7 @@ class GenerateUniformRandomNumbersTest {
     void uniformRandom1() {
         lowerBound = 0;
         upperBound = 2;
-        
+
         test(lowerBound, upperBound);
     }
 
