@@ -11,7 +11,17 @@ public class ComputePower {
      */
 
     public static double power(double x, int y) {
-
-        return 0;
+        double result = 1;
+        if (y < 0) {
+            y *= -1;
+            x = 1/x;
+        }
+        while (y != 0) {
+            if ((y & 1) == 1)
+                result *= x;
+            x *= x;
+            y >>= 1;
+        }
+        return result;
     }
 }
