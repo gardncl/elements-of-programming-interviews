@@ -5,8 +5,6 @@
 This repository contains solutions, tests, and descriptions of the problems from
 [Elements Of Programming Interviews] by Adnan Aziz, Tsung-Hsien Lee, and Amit Prakash.  
 
-[![alt text][eopi]][Elements of Programming Interviews]
-
 It contains three branches:
 1. [master] - Stable release that only contains correct tests and completed work 
 2. [develop] - Contains all incremental updates working towards a release
