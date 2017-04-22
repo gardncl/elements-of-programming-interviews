@@ -14,9 +14,27 @@ class ComputeDivisionTest {
 
     @Test
     void divide1() {
-        expected = 0;
-        x = 0;
-        y = 0;
+        expected = 5;
+        x = 10;
+        y = 2;
+
+        test(expected, x, y);
+    }
+
+    @Test
+    void divide2() {
+        expected = 17;
+        x = 527;
+        y = 31;
+
+        test(expected, x, y);
+    }
+
+    @Test
+    void divide3() {
+        expected = -2;
+        x = 4;
+        y = -2;
 
         test(expected, x, y);
     }
