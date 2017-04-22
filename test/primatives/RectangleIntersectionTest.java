@@ -14,7 +14,7 @@ class RectangleIntersectionTest {
 
     @Test
     void intersectRectangle1() {
-        expected = new Rectangle(0,0,0,0);
+        expected = null;
         r1 = new Rectangle(0,0,1,1);
         r2 = new Rectangle(0,0,-1,-1);
 
