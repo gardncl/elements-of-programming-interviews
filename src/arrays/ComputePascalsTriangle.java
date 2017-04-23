@@ -13,7 +13,7 @@ public class ComputePascalsTriangle {
      */
 
     public static List<List<Integer>> generatePascalTriangle(int numRows) {
-        
+
         return new ArrayList<List<Integer>>();
     }
 }
