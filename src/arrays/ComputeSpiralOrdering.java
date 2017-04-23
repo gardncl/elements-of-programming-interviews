@@ -13,7 +13,7 @@ public class ComputeSpiralOrdering {
     Starts at [0,0] and goes clockwise.
      */
 
-    public static List<Integer> matrixInSpiralOrder (List<List<Integer>> squareMatrix) {
+    public static List<Integer> matrixInSpiralOrder(List<List<Integer>> squareMatrix) {
 
         return new ArrayList<>();
     }
