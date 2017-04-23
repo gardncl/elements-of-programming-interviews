@@ -1,5 +1,7 @@
 package arrays;
 
+import java.util.List;
+
 public class SampleOfflineData {
 
     /*
@@ -10,4 +12,8 @@ public class SampleOfflineData {
     the given size of the array elements. All subsets should
     be equally likely. Return the result in input array itself.
      */
+
+    public static void randomSampling(int k, List<Integer> list) {
+
+    }
 }
