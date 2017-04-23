@@ -1,5 +1,8 @@
 package arrays;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ComputeRandomPermutation {
 
     /*
@@ -9,4 +12,10 @@ public class ComputeRandomPermutation {
     You are given a random number generator that returns integers in the set {0,1,...,n-1}
     with equal probability; use as few calls to it as possible.
      */
+
+    public static List<Integer> computeRandomPermutation(int n) {
+
+        return new ArrayList<>();
+    }
 }
+
