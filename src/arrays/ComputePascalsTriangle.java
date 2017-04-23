@@ -12,7 +12,7 @@ public class ComputePascalsTriangle {
     and returns the first n rows of Pascal's triangle.
      */
 
-    public static List<List<Integer>> generatePascalTriangle(int numRows) {
+    public static List<List<Integer>> generatePascalTriangle(int n) {
 
         return new ArrayList<List<Integer>>();
     }

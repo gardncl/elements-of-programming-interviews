@@ -17,5 +17,5 @@
 * 6.15 GenerateNonuniformRandomNumbers
 * 6.16 SudokuChecker
 * 6.17 ComputeSpiralOrdering
-* 6.18 Rotate2DArray ~
-* 6.19 ComputePascalsTriangle ~
+* 6.18 Rotate2DArray
+* 6.19 ComputePascalsTriangle
