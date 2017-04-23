@@ -30,15 +30,6 @@ class ComputeDivisionTest {
         test(expected, x, y);
     }
 
-    @Test
-    void divide3() {
-        expected = -2;
-        x = 4;
-        y = -2;
-
-        test(expected, x, y);
-    }
-
     private void test(long expected, long x, long y) {
         assertEquals(expected, divide(x,y));
     }

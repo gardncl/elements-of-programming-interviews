@@ -10,7 +10,7 @@ public class ReverseBits {
     reverse order.
      */
 
-    public static long reverse(long x) {
+    public static int reverse(int x) {
 
         return 0;
     }

@@ -24,16 +24,16 @@ class MultiplicationNoArithmeticOperatorsTest {
     void multiply2() {
         expected = 0;
         x = 2;
-        y = 2;
+        y = 0;
 
         test(expected,x,y);
     }
 
     @Test
     void multiply3() {
-        expected = -27;
+        expected = 27;
         x = 9;
-        y = -3;
+        y = 3;
 
         test(expected,x,y);
     }
