@@ -1,5 +1,8 @@
 package arrays;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class SampleOnlineData {
 
     /*
@@ -9,4 +12,9 @@ public class SampleOnlineData {
     and reads packets, continuously maintaining a
     uniform random subset of size k of the read packets.
      */
+
+    public static List<Integer> runningSample(int k, List<Integer> sequence) {
+
+        return new ArrayList<>();
+    }
 }
