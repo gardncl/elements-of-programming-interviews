@@ -4,7 +4,7 @@
 
     <groupId>gardncl</groupId>
     <artifactId>elements-of-programming-interviews</artifactId>
-    <version>1.3-SNAPSHOT</version>
+    <version>1.4-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>Elements of Programming Interviews</name>
