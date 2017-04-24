@@ -1,6 +1,7 @@
 package arrays;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class MultipleArbitraryPrecisionIntegers {
@@ -14,6 +15,6 @@ public class MultipleArbitraryPrecisionIntegers {
 
     public static List<Integer> multiply(List<Integer> a, List<Integer> b) {
 
-        return new ArrayList<>();
+        return Collections.emptyList();
     }
 }

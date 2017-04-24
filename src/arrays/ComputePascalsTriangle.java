@@ -1,6 +1,6 @@
 package arrays;
 
-import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ComputePascalsTriangle {
@@ -14,6 +14,6 @@ public class ComputePascalsTriangle {
 
     public static List<List<Integer>> generatePascalTriangle(int n) {
 
-        return new ArrayList<List<Integer>>();
+        return Collections.emptyList();
     }
 }

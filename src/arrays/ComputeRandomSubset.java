@@ -1,6 +1,7 @@
 package arrays;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ComputeRandomSubset {
@@ -18,6 +19,6 @@ public class ComputeRandomSubset {
 
     public static List<Integer> randomSubset(int n, int k) {
 
-        return new ArrayList<>();
+        return Collections.emptyList();
     }
 }

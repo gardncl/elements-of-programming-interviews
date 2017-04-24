@@ -1,6 +1,7 @@
 package arrays;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ComputeSpiralOrdering {
@@ -15,6 +16,6 @@ public class ComputeSpiralOrdering {
 
     public static List<Integer> matrixInSpiralOrder(List<List<Integer>> squareMatrix) {
 
-        return new ArrayList<>();
+        return Collections.emptyList();
     }
 }

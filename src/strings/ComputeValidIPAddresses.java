@@ -1,6 +1,7 @@
 package strings;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ComputeValidIPAddresses {
@@ -17,7 +18,7 @@ public class ComputeValidIPAddresses {
 
     public static List<String> computeValidIPAddresses(String s) {
 
-        return new ArrayList<>();
+        return Collections.emptyList();
     }
 
 }

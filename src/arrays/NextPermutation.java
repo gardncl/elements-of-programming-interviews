@@ -1,6 +1,7 @@
 package arrays;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class NextPermutation {
@@ -15,6 +16,6 @@ public class NextPermutation {
 
     public static List<Integer> nextPermutation(List<Integer> permutation) {
 
-        return new ArrayList<>();
+        return Collections.emptyList();
     }
 }

@@ -1,6 +1,7 @@
 package arrays;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class SampleOnlineData {
@@ -15,6 +16,6 @@ public class SampleOnlineData {
 
     public static List<Integer> runningSample(int k, List<Integer> sequence) {
 
-        return new ArrayList<>();
+        return Collections.emptyList();
     }
 }

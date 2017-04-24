@@ -1,6 +1,6 @@
 package arrays;
 
-import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Rotate2DArray {
@@ -14,6 +14,6 @@ public class Rotate2DArray {
 
     public static List<List<Integer>> rotateMatix(List<List<Integer>> squareMatrix) {
 
-        return new ArrayList<List<Integer>>();
+        return Collections.emptyList();
     }
 }

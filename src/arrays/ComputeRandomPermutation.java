@@ -1,6 +1,7 @@
 package arrays;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ComputeRandomPermutation {
@@ -15,7 +16,7 @@ public class ComputeRandomPermutation {
 
     public static List<Integer> computeRandomPermutation(int n) {
 
-        return new ArrayList<>();
+        return Collections.emptyList();
     }
 }
 
