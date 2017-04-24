@@ -10,7 +10,7 @@ public class EvaluateRPNExpressions {
     evaluates to.
      */
 
-    public static int eval(String RPNExpression) {
+    public static Integer eval(String RPNExpression) {
 
         return 0;
     }
