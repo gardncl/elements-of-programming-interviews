@@ -1,6 +1,5 @@
 package stacksandqueues;
 
-import arrays.ArrayUtil;
 import org.junit.jupiter.api.Test;
 import utils.StreamUtil;
 
@@ -9,6 +8,7 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 import static org.junit.Assert.assertEquals;
+import static utils.StreamUtil.sequence;
 
 class StackWithMaxTest {
 
@@ -17,14 +17,14 @@ class StackWithMaxTest {
 
     @Test
     public void stackWithMax1(){
-        values = ArrayUtil.sequence(10);
+        values = sequence(10);
 
         test(values);
     }
 
     @Test
     public void stackWithMax2(){
-        values = ArrayUtil.sequence(100);
+        values = sequence(100);
 
         test(values);
     }

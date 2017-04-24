@@ -20,4 +20,16 @@ public class PostingListNode<T> {
         this.next = next;
         this.jump = jump;
     }
+
+    public PostingListNode<T> get(int n) {
+        if (n == 0) {
+            return this;
+        } else if (n < 0) {
+            return null;
+        } else if (this.next == null){
+            throw new RuntimeException("Index out of bounds.");
+        } else {
+            return this.next.get(--n);
+        }
+    }
 }

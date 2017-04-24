@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static arrays.ArrayUtil.sequence;
+import static utils.StreamUtil.sequence;
 
 import static arrays.ComputeRandomSubset.randomSubset;
 import static org.junit.jupiter.api.Assertions.*;
