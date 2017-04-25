@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import static linkedlists.FindOverlappingWithCycles.testOverlappingWithCycles;
 import static linkedlists.LinkedListUtil.createLinkedList;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
 public class FindOverlappingWithCyclesTest {
 

@@ -5,8 +5,8 @@ import org.junit.Test;
 
 import static linkedlists.LinkedListUtil.createLinkedList;
 import static linkedlists.TestCyclicity.isCyclic;
-import static org.junit.jupiter.api.Assertions.assertNull;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.Assert.*;
+import static org.junit.Assert.*;
 
 public class TestCyclicityTest {
 

@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import static arrays.SampleOnlineData.runningSample;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
 public class SampleOnlineDataTest {
 

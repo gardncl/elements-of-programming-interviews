@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import static arrays.Rotate2DArray.rotateMatix;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 public class Rotate2DArrayTest {
 

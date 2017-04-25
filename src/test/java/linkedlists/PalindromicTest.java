@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import static linkedlists.LinkedListUtil.createLinkedList;
 import static linkedlists.Palindromic.isPalindromic;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 public class PalindromicTest {
 

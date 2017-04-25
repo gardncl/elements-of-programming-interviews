@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import static primatives.GenerateUniformRandomNumbers.uniformRandom;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 
 public class GenerateUniformRandomNumbersTest {

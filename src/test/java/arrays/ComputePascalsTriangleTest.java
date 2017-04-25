@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import static arrays.ComputePascalsTriangle.generatePascalTriangle;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 public class ComputePascalsTriangleTest {
 

@@ -1,9 +1,8 @@
 package linkedlists;
 
 import datastructures.ListNode;
-import org.opentest4j.AssertionFailedError;
 
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.Assert.fail;
 
 public class LinkedListUtil {
 
@@ -17,7 +16,7 @@ public class LinkedListUtil {
                 result = result.next;
             }
             assertNull(result);
-        } catch (AssertionFailedError e) {
+        } catch (AssertionError e) {
             StringBuilder errorMessage = new StringBuilder();
             errorMessage.append("\nExpected: "+given.toString()+"\n");
             if (transformed != null && transformed.data != null)
@@ -41,12 +40,12 @@ public class LinkedListUtil {
 
     private static void assertEquals(Integer a, Integer b) {
         if (!a.equals(b))
-            throw new AssertionFailedError();
+            throw new AssertionError();
     }
 
     private static void assertNull(ListNode<Integer> node) {
         if (node != null)
-            throw new AssertionFailedError();
+            throw new AssertionError();
     }
 
 }

@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.Deque;
 import java.util.LinkedList;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.assertEquals;
 import static stacksandqueues.ComputeBuildingsWithView.examineBuildingsWithSunset;
 
 public class ComputeBuildingsWithViewTest {

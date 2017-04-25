@@ -7,7 +7,7 @@ import java.util.List;
 import static utils.StreamUtil.sequence;
 
 import static arrays.ComputeRandomSubset.randomSubset;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
 public class ComputeRandomSubsetTest {
 

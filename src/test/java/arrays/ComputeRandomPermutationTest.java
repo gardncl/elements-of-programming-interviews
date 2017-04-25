@@ -6,7 +6,7 @@ import java.util.List;
 
 import static utils.StreamUtil.sequence;
 import static arrays.ComputeRandomPermutation.computeRandomPermutation;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
 public class ComputeRandomPermutationTest {
 

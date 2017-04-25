@@ -1,12 +1,11 @@
 package arrays;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
 public class DeleteDuplicatesTest {
 
@@ -42,7 +41,7 @@ public class DeleteDuplicatesTest {
     }
 
     private void test(List<Integer> duplicates, List<Integer> noDuplicates, int validElements) {
-        Assertions.assertEquals(validElements, arrays.DeleteDuplicates.deleteDuplicates(duplicates));
+        assertEquals(validElements, arrays.DeleteDuplicates.deleteDuplicates(duplicates));
         assertEquals(noDuplicates, duplicates);
     }
 }
