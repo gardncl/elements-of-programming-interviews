@@ -6,7 +6,7 @@ import utils.NodeUtil;
 
 import java.util.List;
 
-import static utils.NodeUtil.assertSameList;
+import static utils.AssertUtils.assertSameList;
 import static utils.StreamUtil.sequence;
 import static utils.StreamUtil.shuffle;
 
