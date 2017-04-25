@@ -4,6 +4,7 @@ import datastructures.BuildingWithHeight;
 
 import java.util.Deque;
 import java.util.Iterator;
+import java.util.LinkedList;
 
 public class ComputeBuildingsWithView {
 
@@ -17,6 +18,6 @@ public class ComputeBuildingsWithView {
 
     public static Deque<BuildingWithHeight> examineBuildingsWithSunset(Iterator<Integer> sequence) {
 
-        return null;
+        return new LinkedList<>();
     }
 }

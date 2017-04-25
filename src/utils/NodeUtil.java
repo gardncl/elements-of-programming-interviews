@@ -1,8 +1,11 @@
 package utils;
 
+import datastructures.BuildingWithHeight;
 import datastructures.PostingListNode;
 import junit.framework.AssertionFailedError;
 
+import java.util.Deque;
+import java.util.Iterator;
 import java.util.stream.IntStream;
 
 import static org.junit.Assert.*;
@@ -38,6 +41,5 @@ public class NodeUtil {
                 errorMessage.append("Actual: null\n");
             fail(errorMessage.toString());
         }
-
     }
 }
