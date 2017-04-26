@@ -1,5 +1,3 @@
-import datastructures.ListNode;
-
 import static org.junit.Assert.fail;
 
 public class LinkedListUtil {

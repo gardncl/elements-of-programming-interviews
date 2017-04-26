@@ -10,11 +10,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>linkedlists</artifactId>
+
     <dependencies>
         <dependency>
             <groupId>gardncl</groupId>
             <artifactId>datastructures</artifactId>
-            <version>${version}</version>
+            <version>1.4</version>
         </dependency>
     </dependencies>
 
