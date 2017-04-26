@@ -1,4 +1,4 @@
-public class QueueWithMax<T> {
+public class QueueWithMax {
 
     /*
     9.10
@@ -8,18 +8,18 @@ public class QueueWithMax<T> {
     stored in the queue.
      */
 
-    public void enqueue(T x) {
+    public void enqueue(Integer x) {
 
     }
 
-    public T dequeue() {
+    public Integer dequeue() {
 
-        return null;
+        return 0;
     }
 
-    public T max() {
+    public Integer max() {
 
-        return null;
+        return 0;
     }
 
 

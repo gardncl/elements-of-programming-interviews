@@ -7,6 +7,9 @@ public class QueueWithStacks {
     library implementing stacks?
      */
 
+    public QueueWithStacks() {
+    }
+
     public void enqueue(Integer x) {
 
     }

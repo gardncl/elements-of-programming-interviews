@@ -5,21 +5,21 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.IntStream;
 
-public class StackWithMaxTest {
+public class QueueWithMaxTest {
 
     private final int N = 5;
     private int length;
 
     @Test
-    public void stackWithMax1(){
+    public void queueWithMax1() {
         length = 10;
 
         test(length);
     }
 
     @Test
-    public void stackWithMax2(){
-        length = 100;
+    public void queueWithMax2() {
+        length = 10;
 
         test(length);
     }
@@ -32,35 +32,35 @@ public class StackWithMaxTest {
         IntStream.range(0, N)
                 .forEach(n -> {
                     Collections.shuffle(values);
-                    StackWithMax stack = createStack(values);
-                    Assert.assertEquals(max, stack.max());
+                    QueueWithMax queue = createQueue(values);
+                    Assert.assertEquals(max, queue.max());
                 });
     }
 
     private void assertTracksMax(List<Integer> values) {
-        final StackWithMax stackWithMax = new StackWithMax();
+        final QueueWithMax queue = new QueueWithMax();
 
         StreamUtil.revRange(0, values.size()).forEach(
                 i -> {
-                    stackWithMax.push(values.get(i));
+                    queue.enqueue(values.get(i));
                 }
         );
 
         StreamUtil.revRange(0, values.size()).forEach(
                 i -> {
-                    Assert.assertEquals(values.get(i), stackWithMax.pop());
+                    Assert.assertEquals(values.get(i), queue.dequeue());
                 }
         );
     }
 
-    private StackWithMax createStack(List<Integer> values) {
-        final StackWithMax stack = new StackWithMax();
+    private QueueWithMax createQueue(List<Integer> values) {
+        final QueueWithMax queue = new QueueWithMax();
         IntStream.range(0, values.size())
                 .forEach(i ->
                 {
-                    stack.push(values.get(i));
+                    queue.enqueue(values.get(i));
                 });
-        return stack;
+        return queue;
     }
 
 }
