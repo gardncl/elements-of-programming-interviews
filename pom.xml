@@ -5,6 +5,8 @@
     <groupId>gardncl</groupId>
     <artifactId>elements-of-programming-interviews</artifactId>
     <version>1.4</version>
+    <name>Parent</name>
+
     <modules>
         <module>datastructures</module>
         <module>utils</module>
