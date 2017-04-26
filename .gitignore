@@ -1,5 +1,5 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea
 out
-elements-of-programming-interviews.iml
+*.iml
 .DS_Store
