@@ -5,7 +5,6 @@
     <groupId>gardncl</groupId>
     <artifactId>elements-of-programming-interviews</artifactId>
     <version>1.4</version>
-    <name>Parent</name>
 
     <modules>
         <module>datastructures</module>
@@ -49,8 +48,6 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven-surefire-plugin.version}</version>
                 <configuration>
-                    <parallel>methods</parallel>
-                    <threadCountMethods>2</threadCountMethods>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
