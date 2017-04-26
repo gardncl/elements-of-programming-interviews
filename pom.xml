@@ -4,22 +4,52 @@
 
     <groupId>gardncl</groupId>
     <artifactId>elements-of-programming-interviews</artifactId>
-    <version>1.4-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <version>1.4</version>
+    <modules>
+        <module>datastructures</module>
+        <module>utils</module>
+        <module>primatives</module>
+        <module>arrays</module>
+        <module>strings</module>
+        <module>linkedlists</module>
+        <module>stacksandqueues</module>
+    </modules>
+    <packaging>pom</packaging>
 
     <name>Elements of Programming Interviews</name>
     <url>https://github.com/gardncl/elements-of-programming-interviews</url>
 
+    <properties>
+        <javac.version>1.8</javac.version>
+        <maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>
+        <maven-surefire-plugin.version>2.16</maven-surefire-plugin.version>
+        <mockito-core.version>1.10.19</mockito-core.version>
+        <hamcrest-all.version>1.3</hamcrest-all.version>
+        <junit.version>4.12</junit.version>
+    </properties>
+
     <build>
         <directory>out</directory>
+        <sourceDirectory>src/main/java</sourceDirectory>
+        <testSourceDirectory>src/test/java</testSourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.3</version>
+                <version>${maven-compiler-plugin.version}</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>${javac.version}</source>
+                    <target>${javac.version}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven-surefire-plugin.version}</version>
+                <configuration>
+                    <parallel>methods</parallel>
+                    <threadCountMethods>2</threadCountMethods>
+                    <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
         </plugins>
@@ -28,19 +58,19 @@
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
-            <version>1.10.19</version>
+            <version>${mockito-core.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-all</artifactId>
-            <version>1.3</version>
+            <version>${hamcrest-all.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
