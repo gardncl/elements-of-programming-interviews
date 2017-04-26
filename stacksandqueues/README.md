@@ -1,4 +1,4 @@
-#Chapter 9: Stacks and Queues
+# Chapter 9: Stacks and Queues
 
 * 9.1 StackWithMax
 * 9.2 EvaluateRPNExpressions

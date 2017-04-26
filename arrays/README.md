@@ -1,4 +1,4 @@
-#Chapter 6: Arrays  
+# Chapter 6: Arrays  
 
 * 6.1 DutchNationalFlag
 * 6.2 IncrementArbitraryPrecisionInteger

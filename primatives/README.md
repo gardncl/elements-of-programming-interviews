@@ -1,4 +1,4 @@
-#Chapter 5: Primatives
+# Chapter 5: Primatives
 
 * 5.1 ComputeParity
 * 5.2 SwapBits
