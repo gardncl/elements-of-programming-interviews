@@ -4,8 +4,17 @@
 
     <groupId>gardncl</groupId>
     <artifactId>elements-of-programming-interviews</artifactId>
-    <version>1.4-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <version>1.4</version>
+    <modules>
+        <module>datastructures</module>
+        <module>utils</module>
+        <module>primatives</module>
+        <module>arrays</module>
+        <module>strings</module>
+        <module>linkedlists</module>
+        <module>stacksandqueues</module>
+    </modules>
+    <packaging>pom</packaging>
 
     <name>Elements of Programming Interviews</name>
     <url>https://github.com/gardncl/elements-of-programming-interviews</url>
