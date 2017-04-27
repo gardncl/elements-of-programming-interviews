@@ -14,7 +14,7 @@ public class ComputeBinaryTreeNodes {
     figure 10.1 on page 151.
      */
 
-    public static List<List<Integer>> binaryTreeDepthOrder(BinaryTreeNode<Integer> tree) {
+    public static List<List<Integer>> binaryTreeDepthOrder(BinaryTree<Integer> tree) {
 
         return Collections.emptyList();
     }

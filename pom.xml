@@ -4,7 +4,7 @@
 
     <groupId>gardncl</groupId>
     <artifactId>elements-of-programming-interviews</artifactId>
-    <version>1.4</version>
+    <version>1.5</version>
 
     <modules>
         <module>datastructures</module>
@@ -14,6 +14,7 @@
         <module>strings</module>
         <module>linkedlists</module>
         <module>stacksandqueues</module>
+        <module>binarytrees</module>
     </modules>
     <packaging>pom</packaging>
 
