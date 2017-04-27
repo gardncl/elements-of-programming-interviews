@@ -8,8 +8,8 @@ public class ComputeLCAWithParent {
     Assume that each node has a parent pointer.
      */
 
-    public static BinaryTree<Integer> LCA(BinaryTree<Integer> node0, BinaryTree<Integer> node1) {
+    public static BinaryTreeParent<Integer> LCA(BinaryTreeParent<Integer> node0, BinaryTreeParent<Integer> node1) {
 
-        return new BinaryTree<>(0);
+        return new BinaryTreeParent<>(0);
     }
 }

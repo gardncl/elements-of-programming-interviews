@@ -13,4 +13,18 @@ public class BinaryTree<T> {
         this.left = left;
         this.right = right;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        BinaryTree<?> that = (BinaryTree<?>) o;
+
+        if (data != null ? !data.equals(that.data) : that.data != null) return false;
+        if (left != null ? !left.equals(that.left) : that.left != null) return false;
+        return right != null ? right.equals(that.right) : that.right == null;
+    }
+
+
 }
