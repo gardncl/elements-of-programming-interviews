@@ -4,10 +4,10 @@ import java.util.List;
 public class PreorderIterative {
 
     /*
-    10.7
+    10.8
 
     Write a program which takes as input a binary tree
-    and performs an pre-order traversal of the tree.
+    and performs a pre-order traversal of the tree.
     Do not use recursion. Nodes do not contain parent references.
      */
 
