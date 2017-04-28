@@ -8,7 +8,7 @@ public class ComputeRightSiblingTree {
     node on its right, if one exists.
      */
 
-    public static void constructRightSibling(BinaryTree<Integer> tree) {
+    public static void constructRightSibling(BinaryTreeLN<Character> tree) {
 
     }
 }
