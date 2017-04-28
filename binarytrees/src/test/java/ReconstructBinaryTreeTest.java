@@ -37,7 +37,7 @@ public class ReconstructBinaryTreeTest {
 
         test(expected, preorder, inorder);
     }
-    
+
     private void test(BinaryTree<Integer> expected, List<Integer> preorder, List<Integer> inorder) {
         assertEquals(expected, ReconstructBinaryTree.binaryTreeFromPreorderInorder(preorder, inorder));
     }
