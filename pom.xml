@@ -16,6 +16,7 @@
         <module>stacksandqueues</module>
         <module>binarytrees</module>
         <module>heaps</module>
+        <module>searching</module>
     </modules>
     <packaging>pom</packaging>
 
