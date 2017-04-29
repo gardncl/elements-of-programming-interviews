@@ -11,6 +11,8 @@ public class ComputeKClosest {
     are closest to Earth?
      */
 
+    private static final Star EARTH_COORDINATES = new Star(0,0,0);
+
     public static List<Star> getKClosest(int k, Iterator<Star> stars) {
 
         return Collections.emptyList();

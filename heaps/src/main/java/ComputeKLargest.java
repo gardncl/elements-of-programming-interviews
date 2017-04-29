@@ -11,7 +11,7 @@ public class ComputeKLargest {
     in the max-heap. You cannot modify the heap.
      */
 
-    public static List<Integer> kLargestInBinaryHeap(List<Integer> list, int k) {
+    public static List<Integer> kLargestInBinaryHeap(final List<Integer> list, int k) {
 
         return Collections.emptyList();
     }

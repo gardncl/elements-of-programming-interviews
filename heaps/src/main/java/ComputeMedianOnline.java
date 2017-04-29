@@ -1,4 +1,6 @@
+import java.util.Collections;
 import java.util.Iterator;
+import java.util.List;
 
 public class ComputeMedianOnline {
 
@@ -9,7 +11,8 @@ public class ComputeMedianOnline {
     running median of a sequence.
      */
 
-    public static void onlineMedian(Iterator<Integer> sequence) {
+    public static List<Double> onlineMedian(Iterator<Integer> sequence) {
 
+        return Collections.emptyList();
     }
 }
