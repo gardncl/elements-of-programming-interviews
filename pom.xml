@@ -15,6 +15,7 @@
         <module>linkedlists</module>
         <module>stacksandqueues</module>
         <module>binarytrees</module>
+        <module>heaps</module>
     </modules>
     <packaging>pom</packaging>
 
