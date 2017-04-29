@@ -17,6 +17,7 @@
         <module>binarytrees</module>
         <module>heaps</module>
         <module>searching</module>
+        <module>hashtables</module>
     </modules>
     <packaging>pom</packaging>
 

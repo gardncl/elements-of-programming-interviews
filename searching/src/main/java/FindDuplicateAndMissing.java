@@ -11,8 +11,8 @@ public class FindDuplicateAndMissing {
     would you compute the duplicate and missing numbers?
      */
 
-    public static DuplicateAndMissing search(List<Integer> list) {
+    public static Tuple search(List<Integer> list) {
 
-        return new DuplicateAndMissing(0,0);
+        return new Tuple(0,0);
     }
 }
