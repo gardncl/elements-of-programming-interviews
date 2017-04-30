@@ -12,6 +12,12 @@ public class LRUCache {
     also update that entry to be the most recently used entry.
      */
 
+    private int capacity;
+
+    public LRUCache(int capacity) {
+        this.capacity = capacity;
+    }
+
     public Integer lookup(Integer key) {
 
         return 0;
