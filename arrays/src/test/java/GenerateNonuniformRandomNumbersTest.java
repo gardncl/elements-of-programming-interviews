@@ -1,6 +1,7 @@
 import org.junit.Test;
 
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -41,8 +42,11 @@ public class GenerateNonuniformRandomNumbersTest {
     }
 
     private void test(List<Integer> values, List<Double> probabilities) {
-        final Map<Integer, AtomicInteger> results = values.stream().map(integer -> new AbstractMap.SimpleImmutableEntry<>(integer, new AtomicInteger(0)))
-                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+        final Map<Integer, AtomicInteger> results = new ConcurrentHashMap<>(
+                values.stream()
+                        .map(integer -> new AbstractMap.SimpleImmutableEntry<>(integer, new AtomicInteger(0)))
+                        .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue))
+        );
 
         IntStream.range(0, N)
                 .parallel()

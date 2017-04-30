@@ -1,6 +1,11 @@
 import junit.framework.AssertionFailedError;
 import org.junit.Assert;
 
+import java.util.List;
+
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
 public class AssertUtils {
 
     public static void assertSameList(PostingListNode<Integer> expected, PostingListNode<Integer> result) {
@@ -21,6 +26,21 @@ public class AssertUtils {
             else
                 errorMessage.append("Actual: null\n");
             Assert.fail(errorMessage.toString());
+        }
+    }
+
+    public static void assertSameContents(List<String> expected, List<String> result) {
+        try {
+            expected.forEach((expect) -> {
+                if (!result.contains(expect))
+                    throw new AssertionError();
+                result.remove(expect);
+            });
+        } catch (AssertionError e) {
+            StringBuilder errorMessage = new StringBuilder();
+            errorMessage.append("\nExpected: "+expected.toString());
+            errorMessage.append("\nActual: "+result.toString()+"\n");
+            fail(errorMessage.toString());
         }
     }
 }
