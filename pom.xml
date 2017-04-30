@@ -18,6 +18,7 @@
         <module>heaps</module>
         <module>searching</module>
         <module>hashtables</module>
+        <module>sorting</module>
     </modules>
     <packaging>pom</packaging>
 
