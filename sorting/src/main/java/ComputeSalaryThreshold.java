@@ -10,7 +10,7 @@ public class ComputeSalaryThreshold {
      */
 
     public static double findSalaryCap(double targetPayroll, List<Double> currentSalaries) {
-        
+
         return 0;
     }
 }

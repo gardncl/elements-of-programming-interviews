@@ -3,6 +3,7 @@ import org.junit.Assert;
 
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
@@ -29,13 +30,30 @@ public class AssertUtils {
         }
     }
 
-    public static void assertSameContents(List<String> expected, List<String> result) {
+    public static void assertSameContentsInt(List<Integer> expected, List<Integer> result) {
         try {
             expected.forEach((expect) -> {
                 if (!result.contains(expect))
                     throw new AssertionError();
                 result.remove(expect);
             });
+            assertEquals(0, result.size());
+        } catch (AssertionError e) {
+            StringBuilder errorMessage = new StringBuilder();
+            errorMessage.append("\nExpected: "+expected.toString());
+            errorMessage.append("\nActual: "+result.toString()+"\n");
+            fail(errorMessage.toString());
+        }
+    }
+
+    public static void assertSameContentsString(List<String> expected, List<String> result) {
+        try {
+            expected.forEach((expect) -> {
+                if (!result.contains(expect))
+                    throw new AssertionError();
+                result.remove(expect);
+            });
+            assertEquals(0, result.size());
         } catch (AssertionError e) {
             StringBuilder errorMessage = new StringBuilder();
             errorMessage.append("\nExpected: "+expected.toString());
