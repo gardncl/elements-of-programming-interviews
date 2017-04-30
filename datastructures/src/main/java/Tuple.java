@@ -1,14 +1,14 @@
 public class Tuple {
 
-    public Integer duplicate;
-    public Integer missing;
+    public Integer first;
+    public Integer second;
 
     public Tuple() {
     }
 
-    public Tuple(Integer duplicate, Integer missing) {
-        this.duplicate = duplicate;
-        this.missing = missing;
+    public Tuple(Integer first, Integer second) {
+        this.first = first;
+        this.second = second;
     }
 
     @Override
@@ -18,8 +18,8 @@ public class Tuple {
 
         Tuple that = (Tuple) o;
 
-        if (duplicate != null ? !duplicate.equals(that.duplicate) : that.duplicate != null) return false;
-        return missing != null ? missing.equals(that.missing) : that.missing == null;
+        if (first != null ? !first.equals(that.first) : that.first != null) return false;
+        return second != null ? second.equals(that.second) : that.second == null;
     }
 
 }

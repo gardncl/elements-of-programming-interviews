@@ -22,9 +22,9 @@ public class FindDuplicateAndMissingTest {
     public void search2() throws Exception {
         expected = new Tuple();
         list = StreamUtil.shuffle(StreamUtil.sequence(100));
-        expected.duplicate = list.get(25);
-        expected.missing = list.get(75);
-        list.set(75,expected.duplicate);
+        expected.first = list.get(25);
+        expected.second = list.get(75);
+        list.set(75,expected.first);
 
         test(expected, list);
     }
@@ -33,9 +33,9 @@ public class FindDuplicateAndMissingTest {
     public void search3() throws Exception {
         expected = new Tuple();
         list = StreamUtil.shuffle(StreamUtil.sequence(1000));
-        expected.duplicate = list.get(250);
-        expected.missing = list.get(750);
-        list.set(750,expected.duplicate);
+        expected.first = list.get(250);
+        expected.second = list.get(750);
+        list.set(750,expected.first);
 
         test(expected, list);
     }
