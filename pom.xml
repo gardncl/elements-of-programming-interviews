@@ -19,6 +19,7 @@
         <module>searching</module>
         <module>hashtables</module>
         <module>sorting</module>
+        <module>binarysearchtrees</module>
     </modules>
     <packaging>pom</packaging>
 
