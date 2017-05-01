@@ -10,14 +10,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>datastructures</artifactId>
-    <name>Data Structures</name>
-    <dependencies>
-        <dependency>
-            <groupId>gardncl</groupId>
-            <artifactId>datastructures</artifactId>
-            <version>1.4</version>
-        </dependency>
-    </dependencies>
 
 
 </project>
