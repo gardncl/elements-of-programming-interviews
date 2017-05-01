@@ -87,7 +87,7 @@ public class ComputeKMostFrequentTest {
 
 
     private static void test(List<String> expected, List<String> list, int k) {
-        AssertUtils.assertSameContents(expected, ComputeKMostFrequent.mostFrequent(list, k));
+        AssertUtils.assertSameContentsString(expected, ComputeKMostFrequent.mostFrequent(list, k));
     }
 
 }
