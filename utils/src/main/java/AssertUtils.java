@@ -3,13 +3,33 @@ import org.junit.Assert;
 
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
+import static org.junit.Assert.*;
 
 public class AssertUtils {
 
-    public static void assertSameList(PostingListNode<Integer> expected, PostingListNode<Integer> result) {
+    public static void assertSameList(ListNode<Integer> expected, ListNode<Integer> result) {
+        ListNode<Integer> given = expected;
+        ListNode<Integer> transformed = result;
+        try {
+            while (expected != null) {
+                assertEquals(expected.data, result.data);
+                expected = expected.next;
+                result = result.next;
+            }
+            assertNull(result);
+        } catch (AssertionError e) {
+            StringBuilder errorMessage = new StringBuilder();
+            errorMessage.append("\nExpected: "+given.toString()+"\n");
+            if (transformed != null && transformed.data != null)
+                errorMessage.append("Actual: "+transformed.toString()+"\n");
+            else
+                errorMessage.append("Actual: null\n");
+            fail(errorMessage.toString());
+        }
+
+    }
+
+    public static void assertSameListPosting(PostingListNode<Integer> expected, PostingListNode<Integer> result) {
         PostingListNode<Integer> given = expected;
         PostingListNode<Integer> transformed = result;
         try {
@@ -18,7 +38,7 @@ public class AssertUtils {
                 expected = expected.next;
                 result = result.next;
             }
-            Assert.assertNull(result);
+            assertNull(result);
         } catch (AssertionFailedError e) {
             StringBuilder errorMessage = new StringBuilder();
             errorMessage.append("\nExpected: "+given.toString()+"\n");
