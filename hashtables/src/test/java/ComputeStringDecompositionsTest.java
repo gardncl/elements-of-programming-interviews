@@ -28,6 +28,6 @@ public class ComputeStringDecompositionsTest {
     }
 
     private void test(List<String> expected, String s, List<String> words) {
-        AssertUtils.assertSameContents(expected, ComputeStringDecompositions.findAllSubstring(s, words));
+        AssertUtils.assertSameContentsString(expected, ComputeStringDecompositions.findAllSubstring(s, words));
     }
 }
