@@ -4,7 +4,7 @@
 
     <groupId>gardncl</groupId>
     <artifactId>elements-of-programming-interviews</artifactId>
-    <version>1.4</version>
+    <version>1.0</version>
 
     <modules>
         <module>datastructures</module>
