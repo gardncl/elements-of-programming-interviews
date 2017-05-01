@@ -39,6 +39,6 @@ public class SearchPostingsListTest {
             expected.get(shuffle.get(i)).data = shuffle.get((i + 1) % n);
             input.get(i).data = -1;
         }
-        AssertUtils.assertSameList(expected, input);
+        AssertUtils.assertSameListPosting(expected, input);
     }
 }
