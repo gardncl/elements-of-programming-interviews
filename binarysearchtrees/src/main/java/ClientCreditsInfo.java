@@ -25,7 +25,7 @@ public class ClientCreditsInfo {
 
     public int lookup(String clientID) {
 
-        return 0;
+        return -1;
     }
 
     public void addAll(int c) {

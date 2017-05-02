@@ -10,11 +10,11 @@ public class MostVisitedPages {
     and a function to find the k most visited pages, where
     k is an input to the function. Optimize performance for
     the situation where call to the two functions are interleaved.
-    You can assume teh set of distinct pages is small enough
+    You can assume the set of distinct pages is small enough
     to fit in RAM.
      */
 
-    public static List<Integer> findMostVisited(List<Integer> pages) {
+    public static List<Integer> findMostVisited(List<Integer> pages, int k) {
 
         return Collections.emptyList();
     }

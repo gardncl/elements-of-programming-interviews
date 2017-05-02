@@ -11,7 +11,13 @@
 
     <artifactId>binarysearchtrees</artifactId>
     <name>Chapter 15: Binary Search Trees</name>
+
     <dependencies>
+        <dependency>
+            <groupId>gardncl</groupId>
+            <artifactId>utils</artifactId>
+            <version>1.0</version>
+        </dependency>
         <dependency>
             <groupId>gardncl</groupId>
             <artifactId>datastructures</artifactId>

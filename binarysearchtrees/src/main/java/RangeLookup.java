@@ -10,7 +10,7 @@ public class RangeLookup {
     and returns the BST keys that lie in the interval.
      */
 
-    public static List<Tuple> range(BinaryTree<Integer> tree,
+    public static List<Integer> range(BinaryTree<Integer> tree,
                                     Tuple tuple) {
 
         return Collections.emptyList();

@@ -10,7 +10,7 @@ public class EnumerateEntries {
     of the form a+b*sqrt(2) for non-negative integers a and b.
      */
 
-    public class ABSqrt2 implements Comparable<ABSqrt2> {
+    public static class ABSqrt2 implements Comparable<ABSqrt2> {
         public int a, b;
         public double val;
 
