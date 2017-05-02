@@ -4,7 +4,7 @@
 
     <groupId>gardncl</groupId>
     <artifactId>elements-of-programming-interviews</artifactId>
-    <version>1.5</version>
+    <version>1.0</version>
 
     <modules>
         <module>datastructures</module>
@@ -19,6 +19,7 @@
         <module>searching</module>
         <module>hashtables</module>
         <module>sorting</module>
+        <module>binarysearchtrees</module>
     </modules>
     <packaging>pom</packaging>
 
