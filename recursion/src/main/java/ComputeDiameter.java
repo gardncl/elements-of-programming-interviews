@@ -8,7 +8,7 @@ public class ComputeDiameter {
     algorithm to compute the diameter of a tree.
      */
 
-    public static double computeDiameter(TreeNode T) {
+    public static int computeDiameter(TreeNode T) {
 
         return 0;
     }
