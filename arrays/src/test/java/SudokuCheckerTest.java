@@ -40,7 +40,8 @@ public class SudokuCheckerTest {
                 Arrays.asList(7,0,0,0,2,0,0,0,6),
                 Arrays.asList(0,6,0,0,0,0,2,8,0),
                 Arrays.asList(0,0,0,4,1,9,0,0,5),
-                Arrays.asList(0,0,0,0,8,0,0,7,9));
+                Arrays.asList(0,0,0,0,8,0,0,7,9)
+        );
 
         test(expected, board);
     }
@@ -57,7 +58,8 @@ public class SudokuCheckerTest {
                 Arrays.asList(7,0,0,0,2,0,0,0,6),
                 Arrays.asList(0,6,0,0,0,0,2,8,0),
                 Arrays.asList(6,0,0,4,1,9,0,0,5),
-                Arrays.asList(0,0,0,0,8,0,0,7,9));
+                Arrays.asList(0,0,0,0,8,0,0,7,9)
+        );
 
         test(expected, board);
     }
@@ -74,7 +76,8 @@ public class SudokuCheckerTest {
                 Arrays.asList(7,0,0,0,2,0,0,0,6),
                 Arrays.asList(0,6,0,0,0,0,2,8,0),
                 Arrays.asList(0,0,0,4,1,9,0,0,5),
-                Arrays.asList(0,0,0,0,8,0,0,7,9));
+                Arrays.asList(0,0,0,0,8,0,0,7,9)
+        );
 
         test(expected, board);
     }

@@ -20,6 +20,7 @@
         <module>hashtables</module>
         <module>sorting</module>
         <module>binarysearchtrees</module>
+        <module>recursion</module>
     </modules>
     <packaging>pom</packaging>
 
