@@ -20,7 +20,7 @@ Suggested usage:
 Having trouble solving a problem?
 * The book contains hints that I intentionally omitted from this repository
 * The book contains thorough solutions
-* My (sometimes commented) solutions are available in the [solutions] branch
+* My (sometimes commented) [solutions] are available
 
 This project is open source so please fork it and help me create a supplement to this phenomenal book. Always looking for edge cases.
 
