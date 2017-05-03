@@ -10,6 +10,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>datastructures</artifactId>
-
+    <name>Data Structures</name>
 
 </project>
