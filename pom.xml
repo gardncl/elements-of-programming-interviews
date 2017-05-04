@@ -21,6 +21,7 @@
         <module>sorting</module>
         <module>binarysearchtrees</module>
         <module>recursion</module>
+        <module>dynamicprogramming</module>
     </modules>
     <packaging>pom</packaging>
 
