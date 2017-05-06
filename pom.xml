@@ -23,6 +23,7 @@
         <module>recursion</module>
         <module>dynamicprogramming</module>
         <module>greedyalgorithms</module>
+        <module>graphs</module>
     </modules>
     <packaging>pom</packaging>
 
