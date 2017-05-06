@@ -22,6 +22,7 @@
         <module>binarysearchtrees</module>
         <module>recursion</module>
         <module>dynamicprogramming</module>
+        <module>greedyalgorithms</module>
     </modules>
     <packaging>pom</packaging>
 
