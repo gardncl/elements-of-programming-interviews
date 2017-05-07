@@ -9,14 +9,7 @@ public class DeadlockDetection {
     and checks if the graph contains a cycle.
      */
 
-    public static class ColoredGraphVertex {
-        public static enum Color {WHITE, GRAY, BLACK}
-
-        public Color color;
-        public List<ColoredGraphVertex> edges;
-    }
-
-    public static boolean isDeadlocked(List<ColoredGraphVertex> G) {
+    public static boolean isDeadlocked(List<GraphVertex> G) {
 
         return false;
     }

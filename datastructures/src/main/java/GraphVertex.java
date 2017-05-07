@@ -3,18 +3,18 @@ import java.util.Arrays;
 import java.util.List;
 
 public class GraphVertex {
-    public int label;
+    public int data;
     public List<GraphVertex> edges;
     public boolean visited;
 
-    public GraphVertex(int label) {
-        this.label = label;
+    public GraphVertex(int data) {
+        this.data = data;
         this.edges = new ArrayList<>();
         this.visited = false;
     }
 
-    public GraphVertex(int label, GraphVertex... graphVertices) {
-        this.label = label;
+    public GraphVertex(int data, GraphVertex... graphVertices) {
+        this.data = data;
         this.edges = Arrays.asList(graphVertices);
         this.visited = false;
     }
@@ -26,7 +26,7 @@ public class GraphVertex {
 
         GraphVertex that = (GraphVertex) o;
 
-        if (label != that.label) return false;
+        if (data != that.data) return false;
         return edges != null ? edges.equals(that.edges) : that.edges == null;
     }
 }

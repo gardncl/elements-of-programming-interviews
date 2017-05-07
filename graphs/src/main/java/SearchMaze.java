@@ -11,9 +11,7 @@ public class SearchMaze {
     path from the entrance to teh exit, if one exists.
      */
 
-    public static enum Color {WHITE, BLACK}
-
-    public static List<Tuple> searchMaze(List<List<Color>> maze, Tuple s, Tuple e) {
+    public static List<Tuple> searchMaze(List<List<Boolean>> maze, Tuple s, Tuple e) {
 
         return Collections.emptyList();
     }

@@ -1,3 +1,6 @@
+import java.util.Collections;
+import java.util.List;
+
 public class ComputeShortestPath {
 
     /*
@@ -9,7 +12,8 @@ public class ComputeShortestPath {
     with the fewest edges amongst all shortest paths from s to t.
      */
 
-    public static void compute(GraphVertex s, GraphVertex t) {
+    public static List<Vertex> compute(int cost, List<Vertex> graph, Vertex s, Vertex t) {
 
+        return Collections.emptyList();
     }
 }

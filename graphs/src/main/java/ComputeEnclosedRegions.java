@@ -10,7 +10,7 @@ public class ComputeEnclosedRegions {
     that cannot reach the boundary with a B.
      */
 
-    public static void fillSurroundingRegions(List<List<Character>> board) {
+    public static void fillSurroundingRegions(List<List<Boolean>> board) {
 
     }
 }
