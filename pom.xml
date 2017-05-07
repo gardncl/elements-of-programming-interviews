@@ -24,6 +24,7 @@
         <module>dynamicprogramming</module>
         <module>greedyalgorithms</module>
         <module>graphs</module>
+        <module>parallelcomputing</module>
     </modules>
     <packaging>pom</packaging>
 
