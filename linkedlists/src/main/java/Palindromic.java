@@ -1,6 +1,8 @@
 public class Palindromic {
 
     /*
+    8.11
+
     Write a program that tests whether a singly linked list is palindromic.
      */
 
