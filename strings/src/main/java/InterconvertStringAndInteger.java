@@ -1,4 +1,4 @@
-public class InteconvertStringAndInteger {
+public class InterconvertStringAndInteger {
 
     /*
     7.1

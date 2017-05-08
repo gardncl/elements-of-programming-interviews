@@ -2,7 +2,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class InteconvertStringAndIntegerTest {
+public class InterconvertStringAndIntegerTest {
 
     private Integer integer;
     private String string;
@@ -32,7 +32,7 @@ public class InteconvertStringAndIntegerTest {
     }
 
     private void testStringToInt(Integer integer, String string) {
-        assertEquals(integer, InteconvertStringAndInteger.stringToInt(string));
+        assertEquals(integer, InterconvertStringAndInteger.stringToInt(string));
     }
 
     @Test
@@ -60,7 +60,7 @@ public class InteconvertStringAndIntegerTest {
     }
 
     private void testIntToString(String string, int integer) {
-        assertEquals(string, InteconvertStringAndInteger.intToString(integer));
+        assertEquals(string, InterconvertStringAndInteger.intToString(integer));
 
     }
 }
