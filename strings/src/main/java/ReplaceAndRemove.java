@@ -2,7 +2,7 @@ public class ReplaceAndRemove {
 
     /*
     7.4
-    
+
     Write a program which takes as input an array of characters,
     and removes each 'b' and replaces each 'a' by two 'd's.
     Specifically, along with the array, you are provided an
