@@ -2,7 +2,7 @@
 
 [![alt text][eopi]][Elements of Programming Interviews]
 
-This repository contains solutions, tests, and descriptions of the problems from
+This repository contains method stubs, tests, and descriptions of the problems from
 [Elements Of Programming Interviews] by Adnan Aziz, Tsung-Hsien Lee, and Amit Prakash.  
 
 It contains three branches:
