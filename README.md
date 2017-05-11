@@ -1,11 +1,11 @@
-## Elements of Programming Interviews - Java
+# Elements of Programming Interviews - Java
 
 [![alt text][eopi]][Elements of Programming Interviews]
 
 This repository contains method stubs, tests, and descriptions of the problems from
 [Elements Of Programming Interviews] by Adnan Aziz, Tsung-Hsien Lee, and Amit Prakash.  
 
-# Suggested usage:  
+## Suggested usage:  
 * Purchase [Elements of Programming Interviews]
 * Fork [master] (top right corner on github)
 * Clone your forked repository
@@ -13,11 +13,11 @@ This repository contains method stubs, tests, and descriptions of the problems f
 * Program your solution to see if the test cases pass
 * Repeat previous two steps until no problems are left
 
-# Dependencies:  
+## Dependencies:  
 * Java 8 - via [download from oracle], homebrew, apt-get, etc
 * Maven - via [download from apache], homebrew, apt-get, etc
 
-# Having trouble solving a problem?  
+## Having trouble solving a problem?  
 * The book contains descriptions and hints that I intentionally omitted from this repository
 * The book contains thorough solutions
 * My (sometimes commented) [solutions] are available
