@@ -12,7 +12,8 @@ It contains three branches:
 
 Suggested usage:
 * Purchase [Elements of Programming Interviews]
-* Fork [master]
+* Fork [master] (top right corner on github)
+* Clone your forked repository
 * Solve a problem on a blackboard/whiteboard/paper/google document
 * Program your solution to see if the test cases pass
 * Repeat previous two steps until no problems are left
