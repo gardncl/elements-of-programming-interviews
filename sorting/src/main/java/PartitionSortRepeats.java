@@ -4,13 +4,7 @@ public class PartitionSortRepeats {
 
     /*
     14.7
-
-    You are given an array of student objects. Each student
-    has an integer-valued age field that is to be treated
-    as a key. Rearrange the elements of the array so that
-    students of equal age appear together. The order in
-    which different ages appear is not important.
-     */
+    */
 
     public static void groupByAge(List<Person> people) {
 

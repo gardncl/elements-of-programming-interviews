@@ -2,10 +2,7 @@ public class Deadlock {
 
     /*
     20.5
-
-    Identify a concurrency big in the problem below,
-    and modify the code to resolve the issue.
-     */
+    */
 
     public static class Account {
         private int balance;

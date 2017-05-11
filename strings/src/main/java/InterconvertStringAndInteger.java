@@ -2,9 +2,7 @@ public class InterconvertStringAndInteger {
 
     /*
     7.1
-
-    Implement string/integer inter-conversion functions.
-     */
+    */
 
     public static Integer stringToInt(String number) {
 

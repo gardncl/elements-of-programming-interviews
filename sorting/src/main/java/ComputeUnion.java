@@ -5,11 +5,7 @@ public class ComputeUnion {
 
     /*
     14.6
-
-    Design an algorithm that takes as input a set of intervals,
-    and outputs their union expressed as a set of disjoint
-    intervals.
-     */
+    */
 
     public static List<Interval> unionOfIntervals(List<Interval> intervals) {
 

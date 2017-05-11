@@ -2,10 +2,7 @@ public class QueueWithStacks {
 
     /*
     9.9
-
-    How would you implement a queue given a
-    library implementing stacks?
-     */
+    */
 
     public QueueWithStacks() {
     }

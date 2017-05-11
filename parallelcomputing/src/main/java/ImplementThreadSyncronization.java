@@ -4,9 +4,7 @@ public class ImplementThreadSyncronization {
 
     /*
     20.3
-
-    Write code in which two threads, running concurrently, create the integer list from 0 to 99 in order.
-     */
+    */
 
     public static class OddThread extends Thread {
 

@@ -6,12 +6,7 @@ public class ImplementThreadPool {
 
     /*
     20.4
-
-    Suppose you find that the program has poor performance because
-    it frequently blocks on I/O. What steps could you take to
-    improve the program's performance? Feel free to use any utilities
-    from the standard library, including concurrency classes.
-     */
+    */
 
     public static class WebServer {
         public static final int PORT = 8080;

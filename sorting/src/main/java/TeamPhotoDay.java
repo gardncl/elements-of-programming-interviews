@@ -4,12 +4,7 @@ public class TeamPhotoDay {
 
     /*
     14.8
-
-    Design an algorithm that takes as input two teams and the
-    heights of the players in the teams and checks if it is
-    possible to place players to take the photo subject to
-    the placement constraint.
-     */
+    */
 
     public static boolean validPlacementExists(Team A, Team B) {
 
