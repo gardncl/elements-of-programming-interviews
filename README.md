@@ -25,7 +25,7 @@ This repository contains method stubs, tests, and descriptions of the problems f
 This project is open source so please fork it and help me create a supplement to this phenomenal book. Always looking for edge cases.
 
 [Elements of Programming Interviews]:http://amzn.to/2r8PQ2P
-[Python]:http://amzn.to/2q8F7HK
+[Python]:http://amzn.to/2pFTPmo
 [C++]:http://amzn.to/2qcJxLP
 [master]:https://github.com/gardncl/elements-of-programming-interviews
 [solutions]:https://github.com/gardncl/elements-of-programming-interviews-solutions
