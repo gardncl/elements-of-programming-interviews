@@ -46,7 +46,7 @@ public class StackWithMaxTest {
                 }
         );
 
-        StreamUtil.revRange(0, values.size()).forEach(
+        IntStream.range(0, values.size()).forEach(
                 i -> {
                     Assert.assertEquals(values.get(i), stackWithMax.pop());
                 }
