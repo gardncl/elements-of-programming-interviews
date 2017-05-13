@@ -24,6 +24,8 @@ This repository contains method stubs, tests, and descriptions of the problems f
 
 This project is open source so please fork it and help me create a supplement to this phenomenal book. Always looking for edge cases.
 
+### [Donate] if this helped you!
+
 [Elements of Programming Interviews]:http://amzn.to/2r8PQ2P
 [Python]:http://amzn.to/2pFTPmo
 [C++]:http://amzn.to/2qcJxLP
@@ -34,3 +36,4 @@ This project is open source so please fork it and help me create a supplement to
 [download from oracle]:https://www3.ntu.edu.sg/home/ehchua/programming/howto/JDK_Howto.html
 [whiteboard]:http://amzn.to/2pFwscO
 [blackboard]:http://amzn.to/2q8xhxA
+[donate]:paypal.me/gardncl
