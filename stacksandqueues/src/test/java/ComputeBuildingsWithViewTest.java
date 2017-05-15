@@ -1,10 +1,12 @@
 import org.junit.Test;
 
+import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Deque;
 import java.util.LinkedList;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class ComputeBuildingsWithViewTest {
 
@@ -13,7 +15,7 @@ public class ComputeBuildingsWithViewTest {
 
     @Test
     public void examineBuildingsWithSunset1() {
-        expected = new LinkedList<>(Arrays.asList(
+        expected = new ArrayDeque<>(Arrays.asList(
                 new BuildingWithHeight(4,5))
         );
         sequence = new LinkedList<>(Arrays.asList(1,2,3,4,5));
@@ -23,12 +25,12 @@ public class ComputeBuildingsWithViewTest {
 
     @Test
     public void examineBuildingsWithSunset2() {
-        expected = new LinkedList<>(Arrays.asList(
-                new BuildingWithHeight(0,5),
-                new BuildingWithHeight(1,4),
-                new BuildingWithHeight(2,3),
+        expected = new ArrayDeque<>(Arrays.asList(
+                new BuildingWithHeight(4,1),
                 new BuildingWithHeight(3,2),
-                new BuildingWithHeight(4,1))
+                new BuildingWithHeight(2,3),
+                new BuildingWithHeight(1,4),
+                new BuildingWithHeight(0,5))
         );
         sequence = new LinkedList<>(Arrays.asList(5,4,3,2,1));
 
@@ -37,10 +39,10 @@ public class ComputeBuildingsWithViewTest {
 
     @Test
     public void examineBuildingsWithSunset3() {
-        expected = new LinkedList<>(Arrays.asList(
-                new BuildingWithHeight(0,5),
+        expected = new ArrayDeque<>(Arrays.asList(
+                new BuildingWithHeight(4,2),
                 new BuildingWithHeight(2,4),
-                new BuildingWithHeight(4,2))
+                new BuildingWithHeight(0,5))
         );
         sequence = new LinkedList<>(Arrays.asList(5,3,4,1,2));
 
@@ -48,6 +50,9 @@ public class ComputeBuildingsWithViewTest {
     }
 
     private void test(Deque<BuildingWithHeight> expected, LinkedList<Integer> sequence) {
-        assertEquals(expected, ComputeBuildingsWithView.examineBuildingsWithSunset(sequence.iterator()));
+        Deque<BuildingWithHeight> result = ComputeBuildingsWithView.examineBuildingsWithSunset(sequence.iterator());
+        expected.forEach( building-> {
+            assertTrue(building.equals(result.removeFirst()));
+        });
     }
 }
