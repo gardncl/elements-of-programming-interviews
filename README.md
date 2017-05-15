@@ -36,4 +36,4 @@ This project is open source so please fork it and help me create a supplement to
 [download from oracle]:https://www3.ntu.edu.sg/home/ehchua/programming/howto/JDK_Howto.html
 [whiteboard]:http://amzn.to/2pFwscO
 [blackboard]:http://amzn.to/2q8xhxA
-[donate]:paypal.me/gardncl
+[donate]:http://www.paypal.me/gardncl
