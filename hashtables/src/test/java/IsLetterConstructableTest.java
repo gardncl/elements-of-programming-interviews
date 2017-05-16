@@ -29,7 +29,7 @@ public class IsLetterConstructableTest {
     @Test
     public void isConstructable3() throws Exception {
         expected = false;
-        letterText = "Justice is a higher ideal than liberty.";
+        letterText = "Liberty can never be a higher ideal than justice.";
         magazineText = "Justice is the end of government. It is the end of civil society. It ever has been and ever will be pursued until it be obtained, or until liberty be lost in the pursuit.";
 
         test(expected, letterText, magazineText);
