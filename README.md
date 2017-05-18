@@ -26,7 +26,7 @@ This project is open source so please fork it and help me create a supplement to
 
 ### [Donate] if this helped you!
 
-[Elements of Programming Interviews]:http://amzn.to/2r8PQ2P
+[Elements of Programming Interviews]:http://amzn.to/2pMWIWH
 [Python]:http://amzn.to/2pFTPmo
 [C++]:http://amzn.to/2qcJxLP
 [master]:https://github.com/gardncl/elements-of-programming-interviews
