@@ -2,14 +2,14 @@
 
 [![alt text][eopi]][Elements of Programming Interviews]
 
-This repository contains method stubs, tests, and descriptions of the problems from
+This repository contains method stubs and tests of the problems from
 [Elements Of Programming Interviews] by Adnan Aziz, Tsung-Hsien Lee, and Amit Prakash.  This book is also available in [Python] and [C++].
 
 ## Suggested usage:  
 * Purchase [Elements of Programming Interviews]
 * Fork [master] (top right corner on github)
 * Clone your forked repository
-* Solve a problem on a [blackboard]/[whiteboard]/paper/google doc
+* Solve a problem on a blackboard/whiteboard/paper/google doc
 * Program your solution to see if the test cases pass
 * Repeat previous two steps until no problems are left
 
@@ -34,6 +34,4 @@ This project is open source so please fork it and help me create a supplement to
 [eopi]:eopi.jpg?raw=true
 [download from apache]:http://www.baeldung.com/install-maven-on-windows-linux-mac
 [download from oracle]:https://www3.ntu.edu.sg/home/ehchua/programming/howto/JDK_Howto.html
-[whiteboard]:http://amzn.to/2pFwscO
-[blackboard]:http://amzn.to/2q8xhxA
 [donate]:http://www.paypal.me/gardncl

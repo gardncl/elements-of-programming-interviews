@@ -19,7 +19,14 @@ public class QueueWithMaxTest {
 
     @Test
     public void queueWithMax2() {
-        length = 10;
+        length = 100;
+
+        test(length);
+    }
+
+    @Test
+    public void queueWithMax3() {
+        length = 1000;
 
         test(length);
     }
