@@ -52,7 +52,7 @@ public class BinaryTreeUtil {
         tree.left.left.right = new BinaryTree<>(0);
         tree.left.right = new BinaryTree<>(561);
         tree.left.right.right = new BinaryTree<>(3);
-        tree.left.right.left = new BinaryTree<>(17);
+        tree.left.right.right.left = new BinaryTree<>(17);
         tree.right = new BinaryTree<>(6);
         tree.right.left = new BinaryTree<>(2);
         tree.right.left.right = new BinaryTree<>(1);
