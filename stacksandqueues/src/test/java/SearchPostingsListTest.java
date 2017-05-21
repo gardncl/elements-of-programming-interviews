@@ -11,9 +11,9 @@ public class SearchPostingsListTest {
 
     @Test
     public void setJumpOrderRecursive1() {
-        expected = new PostingListNode<>(1);
-        expected.next = new PostingListNode<>(3);
-        expected.next.next = new PostingListNode<>(2);
+        expected = new PostingListNode<>(0);
+        expected.next = new PostingListNode<>(2);
+        expected.next.next = new PostingListNode<>(1);
         expected.jump = expected.next.next;
         expected.jump.jump = expected.next;
         input = new PostingListNode<>(-1);
@@ -27,16 +27,16 @@ public class SearchPostingsListTest {
 
     @Test
     public void setJumpOrderRecursive2() {
-        expected = new PostingListNode<>(1);
-        expected.next = new PostingListNode<>(4);
-        expected.next.next = new PostingListNode<>(2);
-        expected.next.next.next = new PostingListNode<>(3);
+        expected = new PostingListNode<>(0);
+        expected.next = new PostingListNode<>(3);
+        expected.next.next = new PostingListNode<>(1);
+        expected.next.next.next = new PostingListNode<>(2);
         expected.jump = expected.next.next;
         expected.jump.jump = expected.next.next.next;
-        input = new PostingListNode<>(1);
-        input.next = new PostingListNode<>(4);
-        input.next.next = new PostingListNode<>(2);
-        input.next.next.next = new PostingListNode<>(3);
+        input = new PostingListNode<>(-1);
+        input.next = new PostingListNode<>(-1);
+        input.next.next = new PostingListNode<>(-1);
+        input.next.next.next = new PostingListNode<>(-1);
         input.jump = input.next.next;
         input.jump.jump = input.next.next.next;
 
@@ -50,9 +50,9 @@ public class SearchPostingsListTest {
 
     @Test
     public void setJumpOrderIterative1() {
-        expected = new PostingListNode<>(1);
-        expected.next = new PostingListNode<>(3);
-        expected.next.next = new PostingListNode<>(2);
+        expected = new PostingListNode<>(0);
+        expected.next = new PostingListNode<>(2);
+        expected.next.next = new PostingListNode<>(1);
         expected.jump = expected.next.next;
         expected.jump.jump = expected.next;
         input = new PostingListNode<>(-1);
@@ -67,10 +67,10 @@ public class SearchPostingsListTest {
 
     @Test
     public void setJumpOrderIterative2() {
-        expected = new PostingListNode<>(1);
-        expected.next = new PostingListNode<>(4);
-        expected.next.next = new PostingListNode<>(2);
-        expected.next.next.next = new PostingListNode<>(3);
+        expected = new PostingListNode<>(0);
+        expected.next = new PostingListNode<>(3);
+        expected.next.next = new PostingListNode<>(1);
+        expected.next.next.next = new PostingListNode<>(2);
         expected.jump = expected.next.next;
         expected.jump.jump = expected.next.next.next;
         input = new PostingListNode<>(-1);
