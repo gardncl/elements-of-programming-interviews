@@ -23,15 +23,4 @@ public class NodeUtil {
         return dummyHead.next;
     }
 
-    public static PostingListNode<Integer> createPostingList(int n) {
-        PostingListNode<Integer> dummyHead = new PostingListNode<Integer>(null);
-        PostingListNode<Integer> list = dummyHead;
-        for (Integer i : IntStream.range(0,n).toArray()) {
-            list.next = new PostingListNode<>(i);
-            list = list.next;
-        }
-        return dummyHead.next;
-    }
-
-
 }

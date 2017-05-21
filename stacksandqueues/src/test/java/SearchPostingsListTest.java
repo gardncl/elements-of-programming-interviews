@@ -6,39 +6,85 @@ import java.util.List;
 
 public class SearchPostingsListTest {
 
-    private Integer n;
+    private PostingListNode<Integer> expected;
+    private PostingListNode<Integer> input;
 
     @Test
-    public void setJumpOrder1() {
-        n = 5;
+    public void setJumpOrderRecursive1() {
+        expected = new PostingListNode<>(1);
+        expected.next = new PostingListNode<>(3);
+        expected.next.next = new PostingListNode<>(2);
+        expected.jump = expected.next.next;
+        expected.jump.jump = expected.next;
+        input = new PostingListNode<>(-1);
+        input.next = new PostingListNode<>(-1);
+        input.next.next = new PostingListNode<>(-1);
+        input.jump = input.next.next;
+        input.jump.jump = input.next;
 
-        test(n);
+        testRecursive(expected, input);
     }
 
     @Test
-    public void setJumpOrder2() {
-        n = 20;
+    public void setJumpOrderRecursive2() {
+        expected = new PostingListNode<>(1);
+        expected.next = new PostingListNode<>(4);
+        expected.next.next = new PostingListNode<>(2);
+        expected.next.next.next = new PostingListNode<>(3);
+        expected.jump = expected.next.next;
+        expected.jump.jump = expected.next.next.next;
+        input = new PostingListNode<>(1);
+        input.next = new PostingListNode<>(4);
+        input.next.next = new PostingListNode<>(2);
+        input.next.next.next = new PostingListNode<>(3);
+        input.jump = input.next.next;
+        input.jump.jump = input.next.next.next;
 
-        test(n);
+        testRecursive(expected, input);
     }
 
-    @Test
-    public void setJumpOrder3() {
-        n = 50;
-
-        test(n);
-    }
-
-    private void test(Integer n) {
-        final PostingListNode<Integer> expected = NodeUtil.createPostingList(n);
-        final PostingListNode<Integer> input = NodeUtil.createPostingList(n);
-        List<Integer> shuffle = StreamUtil.shuffle(StreamUtil.sequence(n));
-        for (int i = 0; i < n; i++) {
-            expected.get(shuffle.get(i)).jump = expected.get(shuffle.get((i + 1) % n));
-            input.get(shuffle.get(i)).jump = input.get(shuffle.get((i + 1) % n));
-            expected.get(shuffle.get(i)).data = shuffle.get((i + 1) % n);
-            input.get(i).data = -1;
-        }
+    private void testRecursive(PostingListNode<Integer> expected, PostingListNode<Integer> input) {
+        SearchPostingsList.setJumpOrderRecursive(input);
         AssertUtils.assertSameListPosting(expected, input);
     }
+
+    @Test
+    public void setJumpOrderIterative1() {
+        expected = new PostingListNode<>(1);
+        expected.next = new PostingListNode<>(3);
+        expected.next.next = new PostingListNode<>(2);
+        expected.jump = expected.next.next;
+        expected.jump.jump = expected.next;
+        input = new PostingListNode<>(-1);
+        input.next = new PostingListNode<>(-1);
+        input.next.next = new PostingListNode<>(-1);
+        input.jump = input.next.next;
+        input.jump.jump = input.next;
+
+
+        testIterative(expected, input);
+    }
+
+    @Test
+    public void setJumpOrderIterative2() {
+        expected = new PostingListNode<>(1);
+        expected.next = new PostingListNode<>(4);
+        expected.next.next = new PostingListNode<>(2);
+        expected.next.next.next = new PostingListNode<>(3);
+        expected.jump = expected.next.next;
+        expected.jump.jump = expected.next.next.next;
+        input = new PostingListNode<>(-1);
+        input.next = new PostingListNode<>(-1);
+        input.next.next = new PostingListNode<>(-1);
+        input.next.next.next = new PostingListNode<>(-1);
+        input.jump = input.next.next;
+        input.jump.jump = input.next.next.next;
+
+        testIterative(expected, input);
+    }
+    private void testIterative(PostingListNode<Integer> expected, PostingListNode<Integer> input) {
+        SearchPostingsList.setJumpOrderIterative(input);
+        AssertUtils.assertSameListPosting(expected, input);
+    }
+
 }
