@@ -9,7 +9,7 @@
     <modules>
         <module>datastructures</module>
         <module>utils</module>
-        <module>primatives</module>
+        <module>primitives</module>
         <module>arrays</module>
         <module>strings</module>
         <module>linkedlists</module>

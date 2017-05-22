@@ -9,8 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>primatives</artifactId>
-    <name>Chapter 5: Primatives</name>
+    <artifactId>primitives</artifactId>
+    <name>Chapter 5: Primitives</name>
 
     <dependencies>
         <dependency>
