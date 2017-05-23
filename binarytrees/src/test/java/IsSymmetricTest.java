@@ -9,7 +9,7 @@ public class IsSymmetricTest {
 
     @Test
     public void isSymmetric1() throws Exception {
-        expected = true;
+        expected = false;
         tree = BinaryTreeUtil.getEvenTree();
 
         test(expected, tree);
