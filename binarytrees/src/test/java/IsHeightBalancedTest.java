@@ -33,7 +33,7 @@ public class IsHeightBalancedTest {
 
     @Test
     public void isBalanced4() throws Exception {
-        expected = true;
+        expected = false;
         tree = BinaryTreeUtil.getFigureTenDotOne();
 
         test(expected, tree);
