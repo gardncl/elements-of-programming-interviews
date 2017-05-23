@@ -1,6 +1,6 @@
 public class BinaryTreeParent<T> extends BinaryTree<T> {
 
-    public BinaryTree<T> parent;
+    public BinaryTreeParent<T> parent;
 
     public BinaryTreeParent(T data) {
         super(data);
