@@ -26,5 +26,14 @@ public class BinaryTree<T> {
         return right != null ? right.equals(that.right) : that.right == null;
     }
 
-
+    @Override
+    public String toString() {
+        String leftData = left == null ? "null" : left.data.toString();
+        String rightData = right == null ? "null" : right.data.toString();
+        return "BinaryTree{" +
+                "data=" + data +
+                ", left=" + leftData +
+                ", right=" + rightData +
+                '}';
+    }
 }
