@@ -12,7 +12,7 @@ public class FindRootToLeafSumTest {
     public void hasPathSum1() throws Exception {
         expected = true;
         tree = BinaryTreeUtil.getFullTree();
-        targetSum = 10;
+        targetSum = 7;
 
         test(expected, tree, targetSum);
     }
@@ -30,7 +30,7 @@ public class FindRootToLeafSumTest {
     public void hasPathSum3() throws Exception {
         expected = true;
         tree = BinaryTreeUtil.getFigureTenDotOne();
-        targetSum = 519;
+        targetSum = 1365;
 
         test(expected, tree, targetSum);
     }
@@ -39,7 +39,7 @@ public class FindRootToLeafSumTest {
     public void hasPathSum4() throws Exception {
         expected = false;
         tree = BinaryTreeUtil.getFigureTenDotOne();
-        targetSum = 591;
+        targetSum = 724;
 
         test(expected, tree, targetSum);
     }
