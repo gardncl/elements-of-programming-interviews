@@ -20,7 +20,7 @@ public class InorderIterativeTest {
 
     @Test
     public void BSTInOrder2() throws Exception {
-        expected = Arrays.asList(2,1,3,0,5,4,6);
+        expected = Arrays.asList(1,2,3,4,5,6,7);
         tree = BinaryTreeUtil.getFullTree();
 
         test(expected, tree);
@@ -28,7 +28,7 @@ public class InorderIterativeTest {
 
     @Test
     public void BSTInOrder3() throws Exception {
-        expected = Arrays.asList(28,271,0,6,561,17,3,314,2,401,614,1,257,6,271,28);
+        expected = Arrays.asList(28,271,0,6,561,17,3,314,2,401,641,1,257,6,271,28);
         tree = BinaryTreeUtil.getFigureTenDotOne();
 
         test(expected, tree);
