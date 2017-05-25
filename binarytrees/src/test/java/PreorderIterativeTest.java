@@ -20,7 +20,7 @@ public class PreorderIterativeTest {
 
     @Test
     public void BSTPreOrder2() throws Exception {
-        expected = Arrays.asList(0,1,2,3,4,5,6);
+        expected = Arrays.asList(4,2,1,3,6,5,7);
         tree = BinaryTreeUtil.getFullTree();
 
         test(expected, tree);
