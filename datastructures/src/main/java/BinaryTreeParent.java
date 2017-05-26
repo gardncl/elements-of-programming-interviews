@@ -1,9 +1,12 @@
-public class BinaryTreeParent<T> extends BinaryTree<T> {
+public class BinaryTreeParent<T> {
 
     public BinaryTreeParent<T> parent;
+    public T data;
+    public BinaryTreeParent<T> left, right;
+    public Boolean isVisited = false;
 
     public BinaryTreeParent(T data) {
-        super(data);
+        this.data = data;
     }
 
     public void setRight(BinaryTreeParent<T> node) {
