@@ -4,8 +4,8 @@ public class ComputeSuccessor {
     10.10
     */
 
-    public static BinaryTree<Integer> findSuccessor(BinaryTree<Integer> node) {
+    public static BinaryTreeParent<Integer> findSuccessor(BinaryTreeParent<Integer> node) {
 
-        return new BinaryTree<Integer>(0);
+        return new BinaryTreeParent<Integer>(0);
     }
 }
