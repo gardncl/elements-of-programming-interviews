@@ -1,4 +1,4 @@
-# Elements of Programming Interviews - Java
+# Elements of Programming Interviews - Java [![Build Status](https://travis-ci.org/gardncl/elements-of-programming-interviews.svg?branch=master)](https://travis-ci.org/gardncl/elements-of-programming-interviews)
 
 [![alt text][eopi]][Elements of Programming Interviews]
 
