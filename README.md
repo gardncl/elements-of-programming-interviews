@@ -1,5 +1,5 @@
 # Elements of Programming Interviews - Java  
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/learn-api-design/issues)  [![Build Status](https://travis-ci.org/gardncl/elements-of-programming-interviews.svg?branch=master)](https://travis-ci.org/gardncl/elements-of-programming-interviews)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/gardncl/elements-of-programming-interviews/issues)  [![Build Status](https://travis-ci.org/gardncl/elements-of-programming-interviews.svg?branch=master)](https://travis-ci.org/gardncl/elements-of-programming-interviews)
 
 [![alt text][eopi]][Elements of Programming Interviews]
 
