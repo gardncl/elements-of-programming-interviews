@@ -8,33 +8,33 @@ import static org.junit.Assert.*;
 public class ImplementInorderSpaceEfficientTest {
 
     private List<Integer> expected;
-    private BinaryTree<Integer> tree;
+    private BinaryTreeParent<Integer> tree;
 
     @Test
     public void inorderTraversal1() throws Exception {
-        expected = Arrays.asList(2,1,0);
-        tree = BinaryTreeUtil.getOddTree();
+        expected = Arrays.asList(1,0,2);
+        tree = BinaryTreeUtil.getOddTreeWithParent();
 
         test(expected, tree);
     }
 
     @Test
     public void inorderTraversal2() throws Exception {
-        expected = Arrays.asList(2,1,3,0,5,4,6);
-        tree = BinaryTreeUtil.getFullTree();
+        expected = Arrays.asList(1,2,3,4,5,6,7);
+        tree = BinaryTreeUtil.getFullTreeWithParent();
 
         test(expected, tree);
     }
 
     @Test
     public void inorderTraversal3() throws Exception {
-        expected = Arrays.asList(28,271,0,6,561,17,3,314,2,401,614,1,257,6,271,28);
-        tree = BinaryTreeUtil.getFigureTenDotOne();
+        expected = Arrays.asList(28,271,0,6,561,17,3,314,2,401,641,1,257,6,271,28);
+        tree = BinaryTreeUtil.getFigureTenDotOneWithParent();
 
         test(expected, tree);
     }
 
-    private void test(List<Integer> expected, BinaryTree<Integer> tree) {
+    private void test(List<Integer> expected, BinaryTreeParent<Integer> tree) {
         assertEquals(expected, ImplementInorderSpaceEfficient.inorderTraversal(tree));
     }
 
