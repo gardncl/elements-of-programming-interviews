@@ -45,7 +45,7 @@ public class SearchSortedTest {
     @Test
     public void search5() throws Exception {
         n = 100;
-        k = 100;
+        k = 99;
 
         test(n,k);
     }
