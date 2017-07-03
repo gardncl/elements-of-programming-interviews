@@ -1,4 +1,6 @@
+import java.util.Collections;
 import java.util.Iterator;
+import java.util.List;
 
 public class SortAlmostSorted {
 
@@ -6,8 +8,9 @@ public class SortAlmostSorted {
     11.3
     */
 
-    public static void sort(Iterator<Integer> sequence, int k) {
+    public static List sort(Iterator<Integer> sequence, int k) {
 
+        return Collections.emptyList();
     }
 
 }
