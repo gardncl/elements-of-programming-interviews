@@ -16,7 +16,7 @@ public class SortAlmostSortedTest {
     public void sort1() throws Exception {
         expected = Arrays.asList(1,2,3,4,5,6,7,8,9);
         sequence = Arrays.asList(1,4,7,2,5,8,3,6,9).iterator();
-        k = 2;
+        k = 5;
 
         test(expected, sequence, k);
     }
