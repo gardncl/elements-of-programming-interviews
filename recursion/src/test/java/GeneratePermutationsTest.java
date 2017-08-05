@@ -3,7 +3,8 @@ import org.junit.Test;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class GeneratePermutationsTest {
 
@@ -69,13 +70,13 @@ public class GeneratePermutationsTest {
                 Arrays.asList(5,2,7,3),
                 Arrays.asList(5,3,2,7),
                 Arrays.asList(5,3,7,2),
-                Arrays.asList(5,7,2,5),
-                Arrays.asList(5,7,5,2),
+                Arrays.asList(5,7,2,3),
+                Arrays.asList(5,7,3,2),
 
                 Arrays.asList(7,2,5,3),
                 Arrays.asList(7,2,3,5),
-                Arrays.asList(7,3,2,7),
-                Arrays.asList(7,3,7,2),
+                Arrays.asList(7,3,2,5),
+                Arrays.asList(7,3,5,2),
                 Arrays.asList(7,5,3,2),
                 Arrays.asList(7,5,2,3)
         );
