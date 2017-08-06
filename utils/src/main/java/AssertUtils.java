@@ -1,7 +1,10 @@
 import junit.framework.AssertionFailedError;
 import org.junit.Assert;
 
+import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 import static org.junit.Assert.*;
 
@@ -80,5 +83,25 @@ public class AssertUtils {
             errorMessage.append("\nActual: "+result.toString()+"\n");
             fail(errorMessage.toString());
         }
+    }
+
+    public static void assertListOfListsEqual(List<List<Integer>> expected, List<List<Integer>> result) {
+        for (List<Integer> list : result) {
+            if (!expected.stream().anyMatch(x -> hasSameValues(list,x)))
+                fail(list.toString()+" not inside result set.");
+        }
+    }
+
+    private static boolean hasSameValues(List<Integer> list1, List<Integer> list2) {
+        Set<Integer> set1 = new HashSet<>(list1);
+        Set<Integer> set2 = new HashSet<>(list2);
+
+        if (set1.size() != set2.size())
+            return false;
+
+        //LIST DOES NOT SUPPORT REMOVE ALL SO NEED TO CAST TO SET
+        set1.removeAll(set2);
+
+        return set1.isEmpty();
     }
 }
