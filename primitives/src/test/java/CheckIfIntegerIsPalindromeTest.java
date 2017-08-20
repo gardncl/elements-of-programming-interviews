@@ -25,7 +25,7 @@ public class CheckIfIntegerIsPalindromeTest {
 
     @Test
     public void isPalindrome3() {
-        expected = true;
+        expected = false;
         input = -1;
 
         test(expected, input);
