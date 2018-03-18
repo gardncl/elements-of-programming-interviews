@@ -1,3 +1,6 @@
+## Check out the Elements of Programming Interviews author's official, pre-release EPIJudge [here](https://github.com/adnanaziz/EPIJudge).
+
+
 # Elements of Programming Interviews - Java  
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/gardncl/elements-of-programming-interviews/issues)  [![Build Status](https://travis-ci.org/gardncl/elements-of-programming-interviews.svg?branch=master)](https://travis-ci.org/gardncl/elements-of-programming-interviews)
 
