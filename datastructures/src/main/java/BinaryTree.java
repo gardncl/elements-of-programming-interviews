@@ -1,6 +1,6 @@
-public class BinaryTree<T> {
+public class BinaryTreet {
     public T data;
-    public BinaryTree<T> left, right;
+    public BinaryTreet left, right;
     public Boolean isVisited = false;
 
 
