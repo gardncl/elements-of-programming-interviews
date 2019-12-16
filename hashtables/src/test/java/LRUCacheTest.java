@@ -24,7 +24,7 @@ public class LRUCacheTest {
         assertNull(cache.lookup(2));
 
         //LRU IS NOW MOST RECENTLY ACCESSED
-        assertEquals(list.get(3), cache.lookup(3));
+        assertEquals(list.get(2), cache.lookup(3));
 
         //INSERT ONE AND BUMP OFF LAST ENTRY
         cache.insert(1, 1);
